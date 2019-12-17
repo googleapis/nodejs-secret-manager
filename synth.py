@@ -21,17 +21,17 @@ import logging
 logging.basicConfig(level=logging.DEBUG)
 
 # run the gapic generator
-# gapic = gcp.GAPICMicrogenerator()
-# versions = ['v1beta1']
-#for version in versions:
-#  library = gapic.typescript_library(
-#    'secretmanager',
-#    generator_args={
-#      "grpc-service-config": "google/cloud/secrets/v1beta1/secretmanager_grpc_service_config.json"
-#    },
-#    proto_path='/google/cloud/secrets/v1beta1',
-#    version=version)
-#s.copy(library, excludes=['package.json', 'README.md'])
+gapic = gcp.GAPICMicrogenerator()
+versions = ['v1beta1']
+for version in versions:
+  library = gapic.typescript_library(
+    'secretmanager',
+    generator_args={
+      "grpc-service-config": "google/cloud/secrets/v1beta1/secretmanager_grpc_service_config.json"
+    },
+    proto_path='/google/cloud/secrets/v1beta1',
+    version=version)
+s.copy(library, excludes=['package.json', 'README.md'])
 
 # Copy common templates
 common_templates = gcp.CommonTemplates()
