@@ -31,7 +31,7 @@ for version in versions:
     },
     proto_path='/google/cloud/secrets/v1beta1',
     version=version)
-s.copy(library, excludes=['package.json', 'README.md'])
+s.copy(library, excludes=['package.json', 'README.md', 'system-test/fixtures/sample/src/index.js', 'system-test/fixtures/sample/src/index.ts'])
 
 # Copy common templates
 common_templates = gcp.CommonTemplates()

@@ -21,7 +21,7 @@ If you are still having issues, please be sure to include as much information as
   - OS:
   - Node.js version:
   - npm version:
-  - `secrets` version:
+  - `@google-cloud/secret-manager` version:
 
 #### Steps to reproduce
 

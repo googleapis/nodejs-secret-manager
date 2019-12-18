@@ -705,7 +705,7 @@ export class SecretManagerServiceClient {
   /**
    * Gets metadata for a [SecretVersion][google.cloud.secrets.v1beta1.SecretVersion].
    *
-   * `projects/[*]/secrets/[*]/versions/latest` is an alias to the `latest`
+   * `projects/* /secrets/* /versions/latest` is an alias to the `latest`
    * [SecretVersion][google.cloud.secrets.v1beta1.SecretVersion].
    *
    * @param {Object} request
@@ -791,7 +791,7 @@ export class SecretManagerServiceClient {
   /**
    * Accesses a [SecretVersion][google.cloud.secrets.v1beta1.SecretVersion]. This call returns the secret data.
    *
-   * `projects/[*]/secrets/[*]/versions/latest` is an alias to the `latest`
+   * `projects/* /secrets/* /versions/latest` is an alias to the `latest`
    * [SecretVersion][google.cloud.secrets.v1beta1.SecretVersion].
    *
    * @param {Object} request

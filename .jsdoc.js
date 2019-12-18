@@ -40,7 +40,7 @@ module.exports = {
     copyright: 'Copyright 2018 Google, LLC.',
     includeDate: false,
     sourceFiles: false,
-    systemName: 'secrets',
+    systemName: '@google-cloud/secret-manager',
     theme: 'lumen'
   },
   markdown: {
