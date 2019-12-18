@@ -2,7 +2,7 @@
   "name": "@google-cloud/secret-manager",
   "version": "0.1.0",
   "description": "Secrets client for Node.js",
-  "repository": "googleapis/nodejs-secrets",
+  "repository": "googleapis/nodejs-secret-manager",
   "license": "Apache-2.0",
   "author": "Google LLC",
   "files": [
