@@ -5,7 +5,7 @@
   "files": [
     "*.js"
   ],
-  "author": "Google Inc.",
+  "author": "Google LLC",
   "repository": "googleapis/nodejs-secret-manager",
   "engines": {
     "node": ">=8"
