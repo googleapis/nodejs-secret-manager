@@ -16,7 +16,7 @@
 'use strict';
 
 async function main(
-  projectNumber = 'YOUR_PROJECT_NUMBER', // Found in project settings.
+  project = 'YOUR_PROJECT_NAME', // Project to manage secrets for.
   secretId = 'foo', // Identifier for secret.
   secretStringPayload = 'hello world!' // A secret string.
 ) {
@@ -25,7 +25,7 @@ async function main(
   const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
   const client = new SecretManagerServiceClient();
 
-  // const projectNumber = 'YOUR_PROJECT_NUMBER', // Found in project settings.
+  // const project = 'YOUR_PROJECT_NAME', // Project to manage secrets for.
   // const secretId = 'foo', // Identifier for secret.
   // const secretStringPayload = 'hello world!', // A secret string.
 
@@ -34,7 +34,7 @@ async function main(
     // already existing:
     try {
       await client.createSecret({
-        parent: `projects/${projectNumber}`,
+        parent: `projects/${project}`,
         secret: {
           name: secretId,
           replication: {
@@ -53,19 +53,21 @@ async function main(
 
     // Update the latest version of the secret to the value provided:
     await client.addSecretVersion({
-      parent: `projects/${projectNumber}/secrets/${secretId}`,
+      parent: `projects/${project}/secrets/${secretId}`,
       payload: {
         data: Buffer.from(secretStringPayload, 'utf8'),
       },
     });
-    console.info(`set current version of secret to '${secretStringPayload}'`);
+    console.info(
+      `set current version of '${secretId}' to '${secretStringPayload}'`
+    );
 
     // Fetch the latest version of the secret:
     const [secret] = await client.accessSecretVersion({
-      name: `projects/${projectNumber}/secrets/${secretId}/versions/latest`,
+      name: `projects/${project}/secrets/${secretId}/versions/latest`,
     });
     const secretString = secret.payload.data.toString('utf8');
-    console.info(`fetched secret string '${secretString}'`);
+    console.info(`get latest '${secretId}' with value '${secretString}'`);
   }
   setAndAccessSecret();
   // [END secret_manager_quickstart]
