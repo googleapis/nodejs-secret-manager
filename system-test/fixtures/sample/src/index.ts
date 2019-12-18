@@ -19,7 +19,7 @@
 import {SecretManagerServiceClient} from '@google-cloud/secret-manager';
 
 function main() {
-  const sms = new SecretManagerServiceClient();
+  const secretManagerServiceClient = new SecretManagerServiceClient();
 }
 
 main();
