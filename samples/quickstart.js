@@ -21,15 +21,14 @@ async function main(
   secretStringPayload = 'hello world!' // A secret string.
 ) {
   // [START secret_manager_quickstart]
-  // Imports the Google Cloud client library
+  // Import the Secret Manager client and instantiate it:
   const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
+  const client = new SecretManagerServiceClient();
 
   // const projectNumber = 'YOUR_PROJECT_NUMBER', // Found in project settings.
   // const secretId = 'foo', // Identifier for secret.
   // const secretStringPayload = 'hello world!', // A secret string.
 
-  // Creates a client
-  const client = new SecretManagerServiceClient();
   async function setAndAccessSecret() {
     // Create the secret, ignoring errors related to the secret
     // already existing:
