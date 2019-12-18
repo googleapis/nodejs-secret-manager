@@ -2,6 +2,9 @@
   "recurse": true,
   "skip": [
     "https://codecov.io/gh/googleapis/",
-    "www.googleapis.com"
+    "www.googleapis.com",
+    "https://github.com/googleapis/nodejs-secret-manager/.*",
+    "https://googleapis.dev/.*",
+    "https://www.npmjs.org/package/@google-cloud/secret-manager"
   ]
 }
