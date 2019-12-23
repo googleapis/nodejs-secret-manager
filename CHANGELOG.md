@@ -1,6 +1,6 @@
 # Changelog
 
-### [1.0.1](https://www.github.com/googleapis/nodejs-secret-manager/compare/v1.0.0...v1.0.1) (2019-12-23)
+### [1.0.2](https://www.github.com/googleapis/nodejs-secret-manager/compare/v1.0.0...v1.0.2) (2019-12-23)
 
 
 ### Bug Fixes
