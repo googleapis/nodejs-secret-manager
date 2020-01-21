@@ -17,8 +17,11 @@
 cd /d %~dp0
 cd ..
 
+SET PATH=%PATH%;/cygdrive/c/Program Files/nodejs/npm
+
 call nvm ls
-call nvm use v13.6.0
+call nvm use v12.14.1
+call which node
 
 call npm install || goto :error
 call npm run test || goto :error
