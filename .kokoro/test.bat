@@ -17,9 +17,10 @@
 cd /d %~dp0
 cd ..
 
+@rem npm path is not currently set in our image, we should fix this next time
+@rem we upgrade Node.js in the image:
 SET PATH=%PATH%;/cygdrive/c/Program Files/nodejs/npm
 
-call nvm ls
 call nvm use v12.14.1
 call which node
 
