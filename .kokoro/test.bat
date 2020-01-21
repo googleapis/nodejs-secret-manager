@@ -18,7 +18,7 @@ cd /d %~dp0
 cd ..
 
 call nvm ls
-call nvm use v12.14.1
+call nvm use v13.6.0
 
 call npm install || goto :error
 call npm run test || goto :error
