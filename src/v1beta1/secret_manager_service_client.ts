@@ -1637,12 +1637,14 @@ export class SecretManagerServiceClient {
    *
    * @param {string} project
    * @param {string} secret
+   * @param {string} secret_version
    * @returns {string} Resource name string.
    */
-  secretVersionPath(project: string, secret: string) {
+  secretVersionPath(project: string, secret: string, secretVersion: string) {
     return this._pathTemplates.secretversionPathTemplate.render({
       project,
       secret,
+      secret_version: secretVersion,
     });
   }
 
@@ -1670,6 +1672,19 @@ export class SecretManagerServiceClient {
     return this._pathTemplates.secretversionPathTemplate.match(
       secretversionName
     ).secret;
+  }
+
+  /**
+   * Parse the secret_version from SecretVersion resource.
+   *
+   * @param {string} secretversionName
+   *   A fully-qualified path representing SecretVersion resource.
+   * @returns {string} A string representing the secret_version.
+   */
+  matchSecret_versionFromSecretVersionName(secretversionName: string) {
+    return this._pathTemplates.secretversionPathTemplate.match(
+      secretversionName
+    ).secret_version;
   }
 
   /**
