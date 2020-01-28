@@ -1633,7 +1633,7 @@ export class SecretManagerServiceClient {
   }
 
   /**
-   * Return a fully-qualified secretversion resource name string.
+   * Return a fully-qualified secretVersion resource name string.
    *
    * @param {string} project
    * @param {string} secret
@@ -1641,7 +1641,7 @@ export class SecretManagerServiceClient {
    * @returns {string} Resource name string.
    */
   secretVersionPath(project: string, secret: string, secretVersion: string) {
-    return this._pathTemplates.secretversionPathTemplate.render({
+    return this._pathTemplates.secretVersionPathTemplate.render({
       project,
       secret,
       secret_version: secretVersion,
@@ -1651,39 +1651,39 @@ export class SecretManagerServiceClient {
   /**
    * Parse the project from SecretVersion resource.
    *
-   * @param {string} secretversionName
+   * @param {string} secretVersionName
    *   A fully-qualified path representing SecretVersion resource.
    * @returns {string} A string representing the project.
    */
-  matchProjectFromSecretVersionName(secretversionName: string) {
-    return this._pathTemplates.secretversionPathTemplate.match(
-      secretversionName
+  matchProjectFromSecretVersionName(secretVersionName: string) {
+    return this._pathTemplates.secretVersionPathTemplate.match(
+      secretVersionName
     ).project;
   }
 
   /**
    * Parse the secret from SecretVersion resource.
    *
-   * @param {string} secretversionName
+   * @param {string} secretVersionName
    *   A fully-qualified path representing SecretVersion resource.
    * @returns {string} A string representing the secret.
    */
-  matchSecretFromSecretVersionName(secretversionName: string) {
-    return this._pathTemplates.secretversionPathTemplate.match(
-      secretversionName
+  matchSecretFromSecretVersionName(secretVersionName: string) {
+    return this._pathTemplates.secretVersionPathTemplate.match(
+      secretVersionName
     ).secret;
   }
 
   /**
    * Parse the secret_version from SecretVersion resource.
    *
-   * @param {string} secretversionName
+   * @param {string} secretVersionName
    *   A fully-qualified path representing SecretVersion resource.
    * @returns {string} A string representing the secret_version.
    */
-  matchSecret_versionFromSecretVersionName(secretversionName: string) {
-    return this._pathTemplates.secretversionPathTemplate.match(
-      secretversionName
+  matchSecretVersionFromSecretVersionName(secretVersionName: string) {
+    return this._pathTemplates.secretVersionPathTemplate.match(
+      secretVersionName
     ).secret_version;
   }
 

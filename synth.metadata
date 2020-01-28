@@ -1,12 +1,12 @@
 {
-  "updateTime": "2020-01-28T12:32:17.450757Z",
+  "updateTime": "2020-01-28T22:32:47.936114Z",
   "sources": [
     {
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "8e981acfd9b97ea2f312f11bbaa7b6c16e412dea",
-        "internalRef": "291821782"
+        "sha": "9c483584f8fd5a1b862ae07973f4cc7bb3e46648",
+        "internalRef": "292009868"
       }
     },
     {
@@ -48,13 +48,7 @@
       "path": ".github/PULL_REQUEST_TEMPLATE.md"
     },
     {
-      "path": ".github/publish.yml"
-    },
-    {
       "path": ".github/release-please.yml"
-    },
-    {
-      "path": ".gitignore"
     },
     {
       "path": ".jsdoc.js"
@@ -171,12 +165,6 @@
       "path": ".prettierrc"
     },
     {
-      "path": ".repo-metadata.json"
-    },
-    {
-      "path": "CHANGELOG.md"
-    },
-    {
       "path": "CODE_OF_CONDUCT.md"
     },
     {
@@ -193,9 +181,6 @@
     },
     {
       "path": "linkinator.config.json"
-    },
-    {
-      "path": "package.json"
     },
     {
       "path": "protos/google/cloud/secrets/v1beta1/resources.proto"
@@ -219,54 +204,6 @@
       "path": "samples/README.md"
     },
     {
-      "path": "samples/accessSecretVersion.js"
-    },
-    {
-      "path": "samples/addSecretVersion.js"
-    },
-    {
-      "path": "samples/createSecret.js"
-    },
-    {
-      "path": "samples/deleteSecret.js"
-    },
-    {
-      "path": "samples/destroySecretVersion.js"
-    },
-    {
-      "path": "samples/disableSecretVersion.js"
-    },
-    {
-      "path": "samples/enableSecretVersion.js"
-    },
-    {
-      "path": "samples/getSecret.js"
-    },
-    {
-      "path": "samples/getSecretVersion.js"
-    },
-    {
-      "path": "samples/listSecretVersions.js"
-    },
-    {
-      "path": "samples/listSecrets.js"
-    },
-    {
-      "path": "samples/package.json"
-    },
-    {
-      "path": "samples/quickstart.js"
-    },
-    {
-      "path": "samples/test/.eslintrc.yml"
-    },
-    {
-      "path": "samples/test/secretmanager.test.js"
-    },
-    {
-      "path": "samples/updateSecret.js"
-    },
-    {
       "path": "src/index.ts"
     },
     {
@@ -280,12 +217,6 @@
     },
     {
       "path": "src/v1beta1/secret_manager_service_proto_list.json"
-    },
-    {
-      "path": "synth.py"
-    },
-    {
-      "path": "system-test/.eslintrc.yml"
     },
     {
       "path": "system-test/fixtures/sample/src/index.js"
