@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.3](https://www.github.com/googleapis/nodejs-secret-manager/compare/v1.1.2...v1.1.3) (2020-01-28)
+
+
+### Bug Fixes
+
+* make resource helper work; enum, bytes, and Long types now accept strings ([#35](https://www.github.com/googleapis/nodejs-secret-manager/issues/35)) ([3f8d832](https://www.github.com/googleapis/nodejs-secret-manager/commit/3f8d8325b118273f6d07bbdf4353a04ff041a6c6))
+
 ### [1.1.2](https://www.github.com/googleapis/nodejs-secret-manager/compare/v1.1.1...v1.1.2) (2020-01-14)
 
 
