@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://www.github.com/googleapis/nodejs-secret-manager/compare/v1.2.1...v1.3.0) (2020-02-27)
+
+
+### Features
+
+* export protos in src/index.ts ([46e2c3e](https://www.github.com/googleapis/nodejs-secret-manager/commit/46e2c3e5b598dbd3eefeec859f52fffa32bdf63c))
+
 ### [1.2.1](https://www.github.com/googleapis/nodejs-secret-manager/compare/v1.2.0...v1.2.1) (2020-02-12)
 
 
