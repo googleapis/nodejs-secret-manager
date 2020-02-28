@@ -20,8 +20,18 @@ import logging
 
 logging.basicConfig(level=logging.DEBUG)
 
-# run the gapic generator
 gapic = gcp.GAPICMicrogenerator()
+# keep v1beta1 for the time being:
+library = gapic.typescript_library(
+  'secretmanager',
+  generator_args={
+    "grpc-service-config": "google/cloud/secrets/v1beta1/secretmanager_grpc_service_config.json",
+    "package-name": "@google-cloud/secret-manager",
+  },
+  proto_path='/google/cloud/secrets/v1beta1',
+  version='v1beta1')
+s.copy(library, excludes=['package.json', 'README.md', 'src/index.ts'])
+# run the gapic generator (for all versions except v1beta1):
 versions = ['v1']
 library = 'secretmanager'
 for version in versions:

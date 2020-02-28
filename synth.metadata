@@ -1,5 +1,5 @@
 {
-  "updateTime": "2020-02-28T19:10:34.728347Z",
+  "updateTime": "2020-02-28T19:35:16.408237Z",
   "sources": [
     {
       "git": {
@@ -18,6 +18,15 @@
     }
   ],
   "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "secretmanager",
+        "apiVersion": "v1beta1",
+        "language": "typescript",
+        "generator": "gapic-generator-typescript"
+      }
+    },
     {
       "client": {
         "source": "googleapis",
