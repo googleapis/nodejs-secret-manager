@@ -55,51 +55,51 @@ npm install @google-cloud/secret-manager
 ### Using the client library
 
 ```javascript
-  // Import the Secret Manager client and instantiate it:
-  const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
-  const client = new SecretManagerServiceClient();
+// Import the Secret Manager client and instantiate it:
+const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
+const client = new SecretManagerServiceClient();
 
-  /**
-   * TODO(developer): Uncomment these variables before running the sample.
-   */
-  // parent = 'projects/my-project', // Project for which to manage secrets.
-  // secretId = 'foo', // Secret ID.
-  // payload = 'hello world!' // String source data.
+/**
+ * TODO(developer): Uncomment these variables before running the sample.
+ */
+// parent = 'projects/my-project', // Project for which to manage secrets.
+// secretId = 'foo', // Secret ID.
+// payload = 'hello world!' // String source data.
 
-  async function createAndAccessSecret() {
-    // Create the secret with automation replication.
-    const [secret] = await client.createSecret({
-      parent: parent,
-      secret: {
-        name: secretId,
-        replication: {
-          automatic: {},
-        },
+async function createAndAccessSecret() {
+  // Create the secret with automation replication.
+  const [secret] = await client.createSecret({
+    parent: parent,
+    secret: {
+      name: secretId,
+      replication: {
+        automatic: {},
       },
-      secretId,
-    });
+    },
+    secretId,
+  });
 
-    console.info(`Created secret ${secret.name}`);
+  console.info(`Created secret ${secret.name}`);
 
-    // Add a version with a payload onto the secret.
-    const [version] = await client.addSecretVersion({
-      parent: secret.name,
-      payload: {
-        data: Buffer.from(payload, 'utf8'),
-      },
-    });
+  // Add a version with a payload onto the secret.
+  const [version] = await client.addSecretVersion({
+    parent: secret.name,
+    payload: {
+      data: Buffer.from(payload, 'utf8'),
+    },
+  });
 
-    console.info(`Added secret version ${version.name}`);
+  console.info(`Added secret version ${version.name}`);
 
-    // Access the secret.
-    const [accessResponse] = await client.accessSecretVersion({
-      name: version.name,
-    });
+  // Access the secret.
+  const [accessResponse] = await client.accessSecretVersion({
+    name: version.name,
+  });
 
-    const responsePayload = accessResponse.payload.data.toString('utf8');
-    console.info(`Payload: ${responsePayload}`);
-  }
-  createAndAccessSecret();
+  const responsePayload = accessResponse.payload.data.toString('utf8');
+  console.info(`Payload: ${responsePayload}`);
+}
+createAndAccessSecret();
 
 ```
 
@@ -155,11 +155,13 @@ More Information: [Google Cloud Platform Launch Stages][launch_stages]
 
 Contributions welcome! See the [Contributing Guide](https://github.com/googleapis/nodejs-secret-manager/blob/master/CONTRIBUTING.md).
 
-Please note that this `README.md`, the `samples/README.md`,
+Please note that this [README.md](README.md), the [samples/README.md](samples/README.md),
 and a variety of configuration files in this repository (including `.nycrc` and `tsconfig.json`)
-are generated from a central template. To edit one of these files, make an edit
-to its template in this
-[directory](https://github.com/googleapis/synthtool/tree/master/synthtool/gcp/templates/node_library).
+are generated from a central template.
+
+If you would like to make edits to one of those files
+(or if you aren't certain if the file you're changing is one, check in the template repository before making changes),
+look for the file in the [template](https://github.com/googleapis/synthtool/tree/master/synthtool/gcp/templates/node_library).
 
 ## License
 
