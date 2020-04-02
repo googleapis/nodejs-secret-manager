@@ -20,9 +20,6 @@ import logging
 
 logging.basicConfig(level=logging.DEBUG)
 
-AUTOSYNTH_MULTIPLE_COMMITS = True
-
-
 gapic = gcp.GAPICMicrogenerator()
 # keep v1beta1 for the time being:
 library = gapic.typescript_library(
