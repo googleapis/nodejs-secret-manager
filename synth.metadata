@@ -1,6 +1,12 @@
 {
-  "updateTime": "2020-04-11T01:32:49.702958Z",
   "sources": [
+    {
+      "git": {
+        "name": ".",
+        "remote": "https://github.com/googleapis/nodejs-secret-manager.git",
+        "sha": "aa900721808f45a29091aca61052c08d352a8bc2"
+      }
+    },
     {
       "git": {
         "name": "googleapis",
