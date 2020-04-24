@@ -1,5 +1,12 @@
 # Changelog
 
+### [3.0.1](https://www.github.com/googleapis/nodejs-secret-manager/compare/v3.0.0...v3.0.1) (2020-04-24)
+
+
+### Bug Fixes
+
+* remove eslint, update gax, fix generated protos, run the generator ([#94](https://www.github.com/googleapis/nodejs-secret-manager/issues/94)) ([aa90072](https://www.github.com/googleapis/nodejs-secret-manager/commit/aa900721808f45a29091aca61052c08d352a8bc2))
+
 ## [3.0.0](https://www.github.com/googleapis/nodejs-secret-manager/compare/v2.1.0...v3.0.0) (2020-04-10)
 
 
