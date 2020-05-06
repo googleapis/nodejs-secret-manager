@@ -4,7 +4,7 @@
       "git": {
         "name": ".",
         "remote": "git@github.com:googleapis/nodejs-secret-manager.git",
-        "sha": "85539e3b6b0d00dcf6e11f6e79b86f447b5bd185"
+        "sha": "43692ade125438d05f15d7a1efb2d9bcd9e4114c"
       }
     },
     {

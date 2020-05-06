@@ -33,7 +33,7 @@ library = gapic.typescript_library(
     },
     proto_path='/google/cloud/secrets/v1beta1',
     version='v1beta1')
-s.copy(library, excludes=['package.json', 'README.md', 'src/index.ts'])
+s.copy(library, excludes=['package.json', 'README.md'])
 # run the gapic generator (for all versions except v1beta1):
 versions = ['v1']
 library = 'secretmanager'
@@ -46,7 +46,7 @@ for version in versions:
         },
         proto_path=f'/google/cloud/{library}/{version}',
         version=version)
-s.copy(library, excludes=['package.json', 'README.md', 'src/index.ts'])
+s.copy(library, excludes=['package.json', 'README.md'])
 
 # Copy common templates
 common_templates = gcp.CommonTemplates()
