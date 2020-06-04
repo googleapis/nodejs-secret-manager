@@ -4,15 +4,15 @@
       "git": {
         "name": ".",
         "remote": "git@github.com:googleapis/nodejs-secret-manager.git",
-        "sha": "e4f228efc81bc6d9e7953ce0bfabdf2503967b27"
+        "sha": "92d466e383867d312bc26e1133f3e079426d9b37"
       }
     },
     {
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "3a4894c4f0da3e763aca2c67bd280ae915177450",
-        "internalRef": "314363155"
+        "sha": "e45a2f54dce1ac68497acf305145f9e5bb7e1e48",
+        "internalRef": "314725741"
       }
     }
   ],

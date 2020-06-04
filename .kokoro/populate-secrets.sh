@@ -15,6 +15,9 @@
 
 set -eo pipefail
 
+user_uid="$(id -u)"
+user_gid="$(id -g)"
+
 # Populates requested secrets set in SECRET_MANAGER_KEYS from service account:
 # kokoro-trampoline@cloud-devrel-kokoro-resources.iam.gserviceaccount.com
 SECRET_LOCATION="${KOKORO_GFILE_DIR}/secret_manager"
@@ -22,6 +25,7 @@ mkdir -p ${SECRET_LOCATION}
 for key in $(echo ${SECRET_MANAGER_KEYS} | sed "s/,/ /g")
 do
   docker run --entrypoint=gcloud \
+    --user "${user_uid}:${user_gid}" \
     --volume=${KOKORO_GFILE_DIR}:${KOKORO_GFILE_DIR} \
     gcr.io/google.com/cloudsdktool/cloud-sdk \
     secrets versions access latest \
