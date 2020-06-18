@@ -22,6 +22,10 @@ export NPM_CONFIG_PREFIX=/home/node/.npm-global
 export GOOGLE_APPLICATION_CREDENTIALS=${KOKORO_GFILE_DIR}/service-account.json
 export GCLOUD_PROJECT=long-door-651
 
+# Test the new logic for populating secrets from secret manager:
+cat $KOKORO_GFILE_DIR/secret_manager/not_a_real_secret_testing_permissions
+exit 0
+
 cd $(dirname $0)/..
 
 # Run a pre-test hook, if a pre-system-test.sh is in the project
