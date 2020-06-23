@@ -27,9 +27,9 @@ async function main(
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
-  // parent = 'projects/my-project', // Project for which to manage secrets.
-  // secretId = 'foo', // Secret ID.
-  // payload = 'hello world!' // String source data.
+  // const parent = 'projects/my-project', // Project for which to manage secrets.
+  // const secretId = 'foo', // Secret ID.
+  // const payload = 'hello world!' // String source data.
 
   async function createAndAccessSecret() {
     // Create the secret with automation replication.
