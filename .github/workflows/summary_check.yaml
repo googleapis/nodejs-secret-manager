@@ -13,8 +13,9 @@ jobs:
           conclusion: ${{ github.event.status.state }}
           pull_request_head_sha: ${{ github.event.status.sha }}
           author: ${{ github.actor }}
-          myToken: ${{ github.token }}
+          myToken: ${{ secrets.GITHUB_TOKEN }}
           owner: ${{ github.repository_owner }}
           repo: ${{ github.repository }}
           testName: ${{ github.event.status.context }}
           testNameToCheckAgainst: 'ci/kokoro: Samples test'
+          testAuthorToCheckAgainst: 'release-please[bot]'
