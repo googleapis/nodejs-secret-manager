@@ -1,0 +1,20 @@
+name: summary check
+# This workflow is triggered on check runs
+on: 
+  status
+
+jobs:
+  summary_check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: summary_check
+        uses: ../custom_summary_action
+        with:
+          conclusion: ${{ github.event.status.state }}
+          pull_request_head_sha: ${{ github.event.status.sha }}
+          author: ${{ github.actor }}
+          myToken: ${{ github.token }}
+          owner: ${{ github.repository_owner }}
+          repo: ${{ github.repository }}
+          testName: ${{ github.event.status.context }}
+          testNameToCheckAgainst: 'ci/kokoro: Samples test'
