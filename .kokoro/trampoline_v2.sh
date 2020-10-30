@@ -408,6 +408,7 @@ docker_flags=(
     "--volume" "${PROJECT_ROOT}:${TRAMPOLINE_WORKSPACE}"
     "--workdir" "${TRAMPOLINE_WORKSPACE}"
     "--env" "PROJECT_ROOT=${TRAMPOLINE_WORKSPACE}"
+    "--env" "KOKORO_BUILD_ARTIFACTS_SUBDIR=${KOKORO_BUILD_ARTIFACTS_SUBDIR}"
 
     # Mount the temporary home directory.
     "--volume" "${tmphome}:/h"
