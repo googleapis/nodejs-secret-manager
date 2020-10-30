@@ -125,6 +125,8 @@ pass_down_envvars=(
     "TRAMPOLINE_CI"
     # Indicates the version of the script.
     "TRAMPOLINE_VERSION"
+    # Contains path to build artifacts being executed.
+    "KOKORO_BUILD_ARTIFACTS_SUBDIR"
 )
 
 log_yellow "Building with Trampoline ${TRAMPOLINE_VERSION}"
@@ -408,7 +410,6 @@ docker_flags=(
     "--volume" "${PROJECT_ROOT}:${TRAMPOLINE_WORKSPACE}"
     "--workdir" "${TRAMPOLINE_WORKSPACE}"
     "--env" "PROJECT_ROOT=${TRAMPOLINE_WORKSPACE}"
-    "--env" "KOKORO_BUILD_ARTIFACTS_SUBDIR=${KOKORO_BUILD_ARTIFACTS_SUBDIR}"
 
     # Mount the temporary home directory.
     "--volume" "${tmphome}:/h"
