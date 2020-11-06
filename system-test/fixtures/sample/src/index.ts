@@ -18,17 +18,8 @@
 
 import {SecretManagerServiceClient} from '@google-cloud/secret-manager';
 
-// check that the client class type name can be used
-function doStuffWithSecretManagerServiceClient(
-  client: SecretManagerServiceClient
-) {
-  client.close();
-}
-
 function main() {
-  // check that the client instance can be created
-  const secretManagerServiceClient = new SecretManagerServiceClient();
-  doStuffWithSecretManagerServiceClient(secretManagerServiceClient);
+  new SecretManagerServiceClient();
 }
 
 main();
