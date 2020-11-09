@@ -22,6 +22,9 @@ export NPM_CONFIG_PREFIX=${HOME}/.npm-global
 export GOOGLE_APPLICATION_CREDENTIALS=${KOKORO_GFILE_DIR}/service-account.json
 export GCLOUD_PROJECT=long-door-651
 
+export SECRET_ID=rotate-example
+export SECRET_NAME=projects/$GCLOUD_PROJECT/secrets/$SECRET_ID
+
 cd $(dirname $0)/..
 
 # Run a pre-test hook, if a pre-samples-test.sh is in the project
@@ -31,7 +34,7 @@ if [ -f .kokoro/pre-samples-test.sh ]; then
     set -x
 fi
 
-if [ -f samples/package.json ]; then
+if [ -f samples/package.json ] || [ -f samples/secret-rotation/package.json ]; then
     npm install
 
     # Install and link samples
@@ -39,6 +42,13 @@ if [ -f samples/package.json ]; then
     npm link ../
     npm install
     cd ..
+
+    # Install and link rotation sample
+    cd samples/secret-rotation
+    npm link ../../
+    npm install
+    cd ../..
+
     # If tests are running against master, configure Build Cop
     # to open issues on failures:
     if [[ $KOKORO_BUILD_ARTIFACTS_SUBDIR = *"continuous"* ]] || [[ $KOKORO_BUILD_ARTIFACTS_SUBDIR = *"nightly"* ]]; then
@@ -52,6 +62,7 @@ if [ -f samples/package.json ]; then
     fi
 
     npm run samples-test
+    npm run samples-rotation-test
 fi
 
 # codecov combines coverage across integration and unit tests. Include

@@ -30,4 +30,11 @@ if [ -f samples/package.json ]; then
   cd ..
 fi
 
+if [ -f samples/secret-rotation/package.json ]; then
+  cd samples/secret-rotation/
+  npm link ../../
+  npm install
+  cd ../..
+fi
+
 npm run lint
