@@ -1,5 +1,19 @@
 # Changelog
 
+## [3.3.0](https://www.github.com/googleapis/nodejs-secret-manager/compare/v3.2.3...v3.3.0) (2021-01-09)
+
+
+### Features
+
+* adds style enumeration ([#199](https://www.github.com/googleapis/nodejs-secret-manager/issues/199)) ([d99b4af](https://www.github.com/googleapis/nodejs-secret-manager/commit/d99b4af960182916b9a5ed0dfd1f12a2148729fb))
+
+### [3.2.3](https://www.github.com/googleapis/nodejs-secret-manager/compare/v3.2.2...v3.2.3) (2020-11-25)
+
+
+### Bug Fixes
+
+* **browser:** check for fetch on window ([98aaa17](https://www.github.com/googleapis/nodejs-secret-manager/commit/98aaa17c8b9c939746c218b0da3c9d299ad640e1))
+
 ### [3.2.2](https://www.github.com/googleapis/nodejs-secret-manager/compare/v3.2.1...v3.2.2) (2020-11-06)
 
 
