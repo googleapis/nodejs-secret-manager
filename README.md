@@ -13,7 +13,6 @@
 
 Secrets client for Node.js
 
-I've added an additional line.
 
 A comprehensive list of changes in each version may be found in
 [the CHANGELOG](https://github.com/googleapis/nodejs-secret-manager/blob/master/CHANGELOG.md).
