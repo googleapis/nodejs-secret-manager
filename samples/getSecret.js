@@ -14,8 +14,10 @@
 
 'use strict';
 
-// Replace "name" below with your secret ID
-
+// **********TODO (Developer)**************
+// Replace placeholder in name variable below with your secret ID
+// from GCP Secret Manager
+//*****************************************
 async function main(name = 'projects/my-project/secrets/my-secret') {
   // [START secretmanager_get_secret]
 
