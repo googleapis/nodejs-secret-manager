@@ -14,12 +14,10 @@
 
 'use strict';
 
+// Replace "name" below with your secret ID
+
 async function main(name = 'projects/my-project/secrets/my-secret') {
   // [START secretmanager_get_secret]
-  /**
-   * TODO(developer): Uncomment these variables before running the sample.
-   */
-  // const name = 'projects/my-project/secrets/my-secret';
 
   // Imports the Secret Manager library
   const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
