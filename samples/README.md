@@ -2,7 +2,7 @@
 [//]: # "To regenerate it, use `python -m synthtool`."
 <img src="https://avatars2.githubusercontent.com/u/2810941?v=3&s=96" alt="Google Cloud Platform logo" title="Google Cloud Platform" align="right" height="96" width="96"/>
 
-# [Secret Manager: Node.js Samples](https://github.com/googleapis/nodejs-secret-manager)
+# [Secret Manager Test: Node.js Samples](https://github.com/googleapis/nodejs-secret-manager)
 
 [![Open in Cloud Shell][shell_img]][shell_link]
 

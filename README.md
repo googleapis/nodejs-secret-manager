@@ -2,7 +2,7 @@
 [//]: # "To regenerate it, use `python -m synthtool`."
 <img src="https://avatars2.githubusercontent.com/u/2810941?v=3&s=96" alt="Google Cloud Platform logo" title="Google Cloud Platform" align="right" height="96" width="96"/>
 
-# [Secret Manager: Node.js Client](https://github.com/googleapis/nodejs-secret-manager)
+# [Secret Manager Test: Node.js Client](https://github.com/googleapis/nodejs-secret-manager)
 
 [![release level](https://img.shields.io/badge/release%20level-general%20availability%20%28GA%29-brightgreen.svg?style=flat)](https://cloud.google.com/terms/launch-stages)
 [![npm version](https://img.shields.io/npm/v/@google-cloud/secret-manager.svg)](https://www.npmjs.org/package/@google-cloud/secret-manager)
@@ -17,8 +17,8 @@ Secrets client for Node.js
 A comprehensive list of changes in each version may be found in
 [the CHANGELOG](https://github.com/googleapis/nodejs-secret-manager/blob/main/CHANGELOG.md).
 
-* [Secret Manager Node.js Client API Reference][client-docs]
-* [Secret Manager Documentation][product-docs]
+* [Secret Manager Test Node.js Client API Reference][client-docs]
+* [Secret Manager Test Documentation][product-docs]
 * [github.com/googleapis/nodejs-secret-manager](https://github.com/googleapis/nodejs-secret-manager)
 
 Read more about the client libraries for Cloud APIs, including the older
@@ -44,7 +44,7 @@ Google APIs Client Libraries, in [Client Libraries Explained][explained].
 
 1.  [Select or create a Cloud Platform project][projects].
 1.  [Enable billing for your project][billing].
-1.  [Enable the Secret Manager API][enable_api].
+1.  [Enable the Secret Manager Test API][enable_api].
 1.  [Set up authentication with a service account][auth] so you can access the
     API from your local workstation.
 
@@ -132,7 +132,7 @@ Samples are in the [`samples/`](https://github.com/googleapis/nodejs-secret-mana
 
 
 
-The [Secret Manager Node.js Client API Reference][client-docs] documentation
+The [Secret Manager Test Node.js Client API Reference][client-docs] documentation
 also contains samples.
 
 ## Supported Node.js Versions
