@@ -5,7 +5,7 @@
   "release_level": "ga",
   "default_version": "v1",
   "language": "nodejs",
-  "name_pretty": "Secret Manager",
+  "name_pretty": "Secret Manager Test",
   "repo": "googleapis/nodejs-secret-manager",
   "product_documentation": "https://cloud.google.com/secret-manager/docs",
   "requires_billing": true,
