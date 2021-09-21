@@ -12,45 +12,44 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
-function main(name) {
-  // [START secretmanager_enable_secret_version_sample]
+function main(resource) {
+  // [START secretmanager_get_iam_policy_sample]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  Required. The resource name of the [SecretVersion][google.cloud.secretmanager.v1.SecretVersion] to enable in the format
-   *  `projects/* /secrets/* /versions/*`.
+   *  REQUIRED: The resource for which the policy is being requested.
+   *  See the operation documentation for the appropriate value for this field.
    */
-  // const name = 'abc123'
+  // const resource = 'abc123'
   /**
-   *  Optional. Etag of the [SecretVersion][google.cloud.secretmanager.v1.SecretVersion]. The request succeeds if it matches
-   *  the etag of the currently stored secret version object. If the etag is
-   *  omitted, the request succeeds.
+   *  OPTIONAL: A `GetPolicyOptions` object for specifying options to
+   *  `GetIamPolicy`. This field is only used by Cloud IAM.
    */
-  // const etag = 'abc123'
+  // const options = ''
 
   // Imports the Secretmanager library
-  const {SecretManagerServiceClient} = require('@google-cloud/secret-manager').v1;
+  const {SecretManagerServiceClient} =
+    require('@google-cloud/secret-manager').v1;
 
   // Instantiates a client
   const secretmanagerClient = new SecretManagerServiceClient();
 
-  async function enableSecretVersion() {
+  async function getIamPolicy() {
     // Construct request
     const request = {
-      name,
+      resource,
     };
 
     // Run request
-    const response = await secretmanagerClient.enableSecretVersion(request);
+    const response = await secretmanagerClient.getIamPolicy(request);
     console.log(response);
   }
 
-  enableSecretVersion();
-  // [END secretmanager_enable_secret_version_sample]
+  getIamPolicy();
+  // [END secretmanager_get_iam_policy_sample]
 }
 
 process.on('unhandledRejection', err => {

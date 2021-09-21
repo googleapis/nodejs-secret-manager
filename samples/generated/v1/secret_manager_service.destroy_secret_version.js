@@ -12,43 +12,45 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
-function main(secret, updateMask) {
-  // [START secretmanager_update_secret_sample]
+function main(name) {
+  // [START secretmanager_destroy_secret_version_sample]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  Required. [Secret][google.cloud.secretmanager.v1.Secret] with updated field values.
+   *  Required. The resource name of the [SecretVersion][google.cloud.secretmanager.v1.SecretVersion] to destroy in the format
+   *  `projects/* /secrets/* /versions/*`.
    */
-  // const secret = ''
+  // const name = 'abc123'
   /**
-   *  Required. Specifies the fields to be updated.
+   *  Optional. Etag of the [SecretVersion][google.cloud.secretmanager.v1.SecretVersion]. The request succeeds if it matches
+   *  the etag of the currently stored secret version object. If the etag is
+   *  omitted, the request succeeds.
    */
-  // const updateMask = ''
+  // const etag = 'abc123'
 
   // Imports the Secretmanager library
-  const {SecretManagerServiceClient} = require('@google-cloud/secret-manager').v1;
+  const {SecretManagerServiceClient} =
+    require('@google-cloud/secret-manager').v1;
 
   // Instantiates a client
   const secretmanagerClient = new SecretManagerServiceClient();
 
-  async function updateSecret() {
+  async function destroySecretVersion() {
     // Construct request
     const request = {
-      secret,
-      updateMask,
+      name,
     };
 
     // Run request
-    const response = await secretmanagerClient.updateSecret(request);
+    const response = await secretmanagerClient.destroySecretVersion(request);
     console.log(response);
   }
 
-  updateSecret();
-  // [END secretmanager_update_secret_sample]
+  destroySecretVersion();
+  // [END secretmanager_destroy_secret_version_sample]
 }
 
 process.on('unhandledRejection', err => {

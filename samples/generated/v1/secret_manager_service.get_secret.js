@@ -12,44 +12,38 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
-function main(resource) {
-  // [START secretmanager_get_iam_policy_sample]
+function main(name) {
+  // [START secretmanager_get_secret_sample]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  REQUIRED: The resource for which the policy is being requested.
-   *  See the operation documentation for the appropriate value for this field.
+   *  Required. The resource name of the [Secret][google.cloud.secretmanager.v1.Secret], in the format `projects/* /secrets/*`.
    */
-  // const resource = 'abc123'
-  /**
-   *  OPTIONAL: A `GetPolicyOptions` object for specifying options to
-   *  `GetIamPolicy`. This field is only used by Cloud IAM.
-   */
-  // const options = ''
+  // const name = 'abc123'
 
   // Imports the Secretmanager library
-  const {SecretManagerServiceClient} = require('@google-cloud/secret-manager').v1;
+  const {SecretManagerServiceClient} =
+    require('@google-cloud/secret-manager').v1;
 
   // Instantiates a client
   const secretmanagerClient = new SecretManagerServiceClient();
 
-  async function getIamPolicy() {
+  async function getSecret() {
     // Construct request
     const request = {
-      resource,
+      name,
     };
 
     // Run request
-    const response = await secretmanagerClient.getIamPolicy(request);
+    const response = await secretmanagerClient.getSecret(request);
     console.log(response);
   }
 
-  getIamPolicy();
-  // [END secretmanager_get_iam_policy_sample]
+  getSecret();
+  // [END secretmanager_get_secret_sample]
 }
 
 process.on('unhandledRejection', err => {

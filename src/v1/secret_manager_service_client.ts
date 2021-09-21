@@ -404,6 +404,10 @@ export class SecretManagerServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.createSecret(request);
+   *
+   * @example <caption>include:samples/generated/v1/secret_manager_service.create_secret.js</caption>
+   * region_tag:secretmanager_create_secret_sample
+   *
    */
   createSecret(
     request?: protos.google.cloud.secretmanager.v1.ICreateSecretRequest,
@@ -499,6 +503,10 @@ export class SecretManagerServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.addSecretVersion(request);
+   *
+   * @example <caption>include:samples/generated/v1/secret_manager_service.add_secret_version.js</caption>
+   * region_tag:secretmanager_add_secret_version_sample
+   *
    */
   addSecretVersion(
     request?: protos.google.cloud.secretmanager.v1.IAddSecretVersionRequest,
@@ -586,6 +594,10 @@ export class SecretManagerServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.getSecret(request);
+   *
+   * @example <caption>include:samples/generated/v1/secret_manager_service.get_secret.js</caption>
+   * region_tag:secretmanager_get_secret_sample
+   *
    */
   getSecret(
     request?: protos.google.cloud.secretmanager.v1.IGetSecretRequest,
@@ -677,6 +689,10 @@ export class SecretManagerServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.updateSecret(request);
+   *
+   * @example <caption>include:samples/generated/v1/secret_manager_service.update_secret.js</caption>
+   * region_tag:secretmanager_update_secret_sample
+   *
    */
   updateSecret(
     request?: protos.google.cloud.secretmanager.v1.IUpdateSecretRequest,
@@ -773,6 +789,10 @@ export class SecretManagerServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.deleteSecret(request);
+   *
+   * @example <caption>include:samples/generated/v1/secret_manager_service.delete_secret.js</caption>
+   * region_tag:secretmanager_delete_secret_sample
+   *
    */
   deleteSecret(
     request?: protos.google.cloud.secretmanager.v1.IDeleteSecretRequest,
@@ -871,6 +891,10 @@ export class SecretManagerServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.getSecretVersion(request);
+   *
+   * @example <caption>include:samples/generated/v1/secret_manager_service.get_secret_version.js</caption>
+   * region_tag:secretmanager_get_secret_version_sample
+   *
    */
   getSecretVersion(
     request?: protos.google.cloud.secretmanager.v1.IGetSecretVersionRequest,
@@ -972,6 +996,10 @@ export class SecretManagerServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.accessSecretVersion(request);
+   *
+   * @example <caption>include:samples/generated/v1/secret_manager_service.access_secret_version.js</caption>
+   * region_tag:secretmanager_access_secret_version_sample
+   *
    */
   accessSecretVersion(
     request?: protos.google.cloud.secretmanager.v1.IAccessSecretVersionRequest,
@@ -1077,6 +1105,10 @@ export class SecretManagerServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.disableSecretVersion(request);
+   *
+   * @example <caption>include:samples/generated/v1/secret_manager_service.disable_secret_version.js</caption>
+   * region_tag:secretmanager_disable_secret_version_sample
+   *
    */
   disableSecretVersion(
     request?: protos.google.cloud.secretmanager.v1.IDisableSecretVersionRequest,
@@ -1182,6 +1214,10 @@ export class SecretManagerServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.enableSecretVersion(request);
+   *
+   * @example <caption>include:samples/generated/v1/secret_manager_service.enable_secret_version.js</caption>
+   * region_tag:secretmanager_enable_secret_version_sample
+   *
    */
   enableSecretVersion(
     request?: protos.google.cloud.secretmanager.v1.IEnableSecretVersionRequest,
@@ -1288,6 +1324,10 @@ export class SecretManagerServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.destroySecretVersion(request);
+   *
+   * @example <caption>include:samples/generated/v1/secret_manager_service.destroy_secret_version.js</caption>
+   * region_tag:secretmanager_destroy_secret_version_sample
+   *
    */
   destroySecretVersion(
     request?: protos.google.cloud.secretmanager.v1.IDestroySecretVersionRequest,
@@ -1388,6 +1428,10 @@ export class SecretManagerServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.setIamPolicy(request);
+   *
+   * @example <caption>include:samples/generated/v1/secret_manager_service.set_iam_policy.js</caption>
+   * region_tag:secretmanager_set_iam_policy_sample
+   *
    */
   setIamPolicy(
     request?: protos.google.iam.v1.ISetIamPolicyRequest,
@@ -1476,6 +1520,10 @@ export class SecretManagerServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.getIamPolicy(request);
+   *
+   * @example <caption>include:samples/generated/v1/secret_manager_service.get_iam_policy.js</caption>
+   * region_tag:secretmanager_get_iam_policy_sample
+   *
    */
   getIamPolicy(
     request?: protos.google.iam.v1.IGetIamPolicyRequest,
@@ -1571,6 +1619,10 @@ export class SecretManagerServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.testIamPermissions(request);
+   *
+   * @example <caption>include:samples/generated/v1/secret_manager_service.test_iam_permissions.js</caption>
+   * region_tag:secretmanager_test_iam_permissions_sample
+   *
    */
   testIamPermissions(
     request?: protos.google.iam.v1.ITestIamPermissionsRequest,
@@ -1676,6 +1728,10 @@ export class SecretManagerServiceClient {
    *   Please see the
    *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
    *   for more details and examples.
+   *
+   * @example <caption>include:samples/generated/v1/secret_manager_service.list_secrets.js</caption>
+   * region_tag:secretmanager_list_secrets_sample
+   *
    */
   listSecrets(
     request?: protos.google.cloud.secretmanager.v1.IListSecretsRequest,
@@ -1752,6 +1808,10 @@ export class SecretManagerServiceClient {
    *   Please see the
    *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
    *   for more details and examples.
+   *
+   * @example <caption>include:samples/generated/v1/secret_manager_service.list_secrets.js</caption>
+   * region_tag:secretmanager_list_secrets_sample
+   *
    */
   listSecretsStream(
     request?: protos.google.cloud.secretmanager.v1.IListSecretsRequest,
@@ -1765,7 +1825,8 @@ export class SecretManagerServiceClient {
       gax.routingHeader.fromParams({
         parent: request.parent || '',
       });
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listSecrets'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listSecrets.createStream(
       this.innerApiCalls.listSecrets as gax.GaxCall,
@@ -1811,6 +1872,10 @@ export class SecretManagerServiceClient {
    * for await (const response of iterable) {
    *   // process response
    * }
+   *
+   * @example <caption>include:samples/generated/v1/secret_manager_service.list_secrets.js</caption>
+   * region_tag:secretmanager_list_secrets_sample
+   *
    */
   listSecretsAsync(
     request?: protos.google.cloud.secretmanager.v1.IListSecretsRequest,
@@ -1825,7 +1890,8 @@ export class SecretManagerServiceClient {
         parent: request.parent || '',
       });
     options = options || {};
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listSecrets'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listSecrets.asyncIterate(
       this.innerApiCalls['listSecrets'] as GaxCall,
@@ -1899,6 +1965,10 @@ export class SecretManagerServiceClient {
    *   Please see the
    *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
    *   for more details and examples.
+   *
+   * @example <caption>include:samples/generated/v1/secret_manager_service.list_secret_versions.js</caption>
+   * region_tag:secretmanager_list_secret_versions_sample
+   *
    */
   listSecretVersions(
     request?: protos.google.cloud.secretmanager.v1.IListSecretVersionsRequest,
@@ -1976,6 +2046,10 @@ export class SecretManagerServiceClient {
    *   Please see the
    *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
    *   for more details and examples.
+   *
+   * @example <caption>include:samples/generated/v1/secret_manager_service.list_secret_versions.js</caption>
+   * region_tag:secretmanager_list_secret_versions_sample
+   *
    */
   listSecretVersionsStream(
     request?: protos.google.cloud.secretmanager.v1.IListSecretVersionsRequest,
@@ -1989,7 +2063,8 @@ export class SecretManagerServiceClient {
       gax.routingHeader.fromParams({
         parent: request.parent || '',
       });
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listSecretVersions'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listSecretVersions.createStream(
       this.innerApiCalls.listSecretVersions as gax.GaxCall,
@@ -2036,6 +2111,10 @@ export class SecretManagerServiceClient {
    * for await (const response of iterable) {
    *   // process response
    * }
+   *
+   * @example <caption>include:samples/generated/v1/secret_manager_service.list_secret_versions.js</caption>
+   * region_tag:secretmanager_list_secret_versions_sample
+   *
    */
   listSecretVersionsAsync(
     request?: protos.google.cloud.secretmanager.v1.IListSecretVersionsRequest,
@@ -2050,7 +2129,8 @@ export class SecretManagerServiceClient {
         parent: request.parent || '',
       });
     options = options || {};
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listSecretVersions'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listSecretVersions.asyncIterate(
       this.innerApiCalls['listSecretVersions'] as GaxCall,

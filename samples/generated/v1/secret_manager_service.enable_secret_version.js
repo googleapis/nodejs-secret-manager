@@ -12,38 +12,45 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
 function main(name) {
-  // [START secretmanager_get_secret_sample]
+  // [START secretmanager_enable_secret_version_sample]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  Required. The resource name of the [Secret][google.cloud.secretmanager.v1.Secret], in the format `projects/* /secrets/*`.
+   *  Required. The resource name of the [SecretVersion][google.cloud.secretmanager.v1.SecretVersion] to enable in the format
+   *  `projects/* /secrets/* /versions/*`.
    */
   // const name = 'abc123'
+  /**
+   *  Optional. Etag of the [SecretVersion][google.cloud.secretmanager.v1.SecretVersion]. The request succeeds if it matches
+   *  the etag of the currently stored secret version object. If the etag is
+   *  omitted, the request succeeds.
+   */
+  // const etag = 'abc123'
 
   // Imports the Secretmanager library
-  const {SecretManagerServiceClient} = require('@google-cloud/secret-manager').v1;
+  const {SecretManagerServiceClient} =
+    require('@google-cloud/secret-manager').v1;
 
   // Instantiates a client
   const secretmanagerClient = new SecretManagerServiceClient();
 
-  async function getSecret() {
+  async function enableSecretVersion() {
     // Construct request
     const request = {
       name,
     };
 
     // Run request
-    const response = await secretmanagerClient.getSecret(request);
+    const response = await secretmanagerClient.enableSecretVersion(request);
     console.log(response);
   }
 
-  getSecret();
-  // [END secretmanager_get_secret_sample]
+  enableSecretVersion();
+  // [END secretmanager_enable_secret_version_sample]
 }
 
 process.on('unhandledRejection', err => {

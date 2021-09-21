@@ -12,52 +12,47 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
-function main(parent, secretId, secret) {
-  // [START secretmanager_create_secret_sample]
+function main(resource, permissions) {
+  // [START secretmanager_test_iam_permissions_sample]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  Required. The resource name of the project to associate with the
-   *  [Secret][google.cloud.secretmanager.v1.Secret], in the format `projects/*`.
+   *  REQUIRED: The resource for which the policy detail is being requested.
+   *  See the operation documentation for the appropriate value for this field.
    */
-  // const parent = 'abc123'
+  // const resource = 'abc123'
   /**
-   *  Required. This must be unique within the project.
-   *  A secret ID is a string with a maximum length of 255 characters and can
-   *  contain uppercase and lowercase letters, numerals, and the hyphen (`-`) and
-   *  underscore (`_`) characters.
+   *  The set of permissions to check for the `resource`. Permissions with
+   *  wildcards (such as '*' or 'storage.*') are not allowed. For more
+   *  information see
+   *  [IAM Overview](https://cloud.google.com/iam/docs/overview#permissions).
    */
-  // const secretId = 'abc123'
-  /**
-   *  Required. A [Secret][google.cloud.secretmanager.v1.Secret] with initial field values.
-   */
-  // const secret = ''
+  // const permissions = 'abc123'
 
   // Imports the Secretmanager library
-  const {SecretManagerServiceClient} = require('@google-cloud/secret-manager').v1;
+  const {SecretManagerServiceClient} =
+    require('@google-cloud/secret-manager').v1;
 
   // Instantiates a client
   const secretmanagerClient = new SecretManagerServiceClient();
 
-  async function createSecret() {
+  async function testIamPermissions() {
     // Construct request
     const request = {
-      parent,
-      secretId,
-      secret,
+      resource,
+      permissions,
     };
 
     // Run request
-    const response = await secretmanagerClient.createSecret(request);
+    const response = await secretmanagerClient.testIamPermissions(request);
     console.log(response);
   }
 
-  createSecret();
-  // [END secretmanager_create_secret_sample]
+  testIamPermissions();
+  // [END secretmanager_test_iam_permissions_sample]
 }
 
 process.on('unhandledRejection', err => {

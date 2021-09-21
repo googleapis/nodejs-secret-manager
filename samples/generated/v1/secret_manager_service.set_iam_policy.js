@@ -12,41 +12,47 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
-function main(name) {
-  // [START secretmanager_access_secret_version_sample]
+function main(resource, policy) {
+  // [START secretmanager_set_iam_policy_sample]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  Required. The resource name of the [SecretVersion][google.cloud.secretmanager.v1.SecretVersion] in the format
-   *  `projects/* /secrets/* /versions/*`.
-   *  `projects/* /secrets/* /versions/latest` is an alias to the most recently
-   *  created [SecretVersion][google.cloud.secretmanager.v1.SecretVersion].
+   *  REQUIRED: The resource for which the policy is being specified.
+   *  See the operation documentation for the appropriate value for this field.
    */
-  // const name = 'abc123'
+  // const resource = 'abc123'
+  /**
+   *  REQUIRED: The complete policy to be applied to the `resource`. The size of
+   *  the policy is limited to a few 10s of KB. An empty policy is a
+   *  valid policy but certain Cloud Platform services (such as Projects)
+   *  might reject them.
+   */
+  // const policy = ''
 
   // Imports the Secretmanager library
-  const {SecretManagerServiceClient} = require('@google-cloud/secret-manager').v1;
+  const {SecretManagerServiceClient} =
+    require('@google-cloud/secret-manager').v1;
 
   // Instantiates a client
   const secretmanagerClient = new SecretManagerServiceClient();
 
-  async function accessSecretVersion() {
+  async function setIamPolicy() {
     // Construct request
     const request = {
-      name,
+      resource,
+      policy,
     };
 
     // Run request
-    const response = await secretmanagerClient.accessSecretVersion(request);
+    const response = await secretmanagerClient.setIamPolicy(request);
     console.log(response);
   }
 
-  accessSecretVersion();
-  // [END secretmanager_access_secret_version_sample]
+  setIamPolicy();
+  // [END secretmanager_set_iam_policy_sample]
 }
 
 process.on('unhandledRejection', err => {

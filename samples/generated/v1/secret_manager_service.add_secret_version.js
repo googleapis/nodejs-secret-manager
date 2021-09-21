@@ -12,47 +12,44 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
-function main(resource, permissions) {
-  // [START secretmanager_test_iam_permissions_sample]
+function main(parent, payload) {
+  // [START secretmanager_add_secret_version_sample]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  REQUIRED: The resource for which the policy detail is being requested.
-   *  See the operation documentation for the appropriate value for this field.
+   *  Required. The resource name of the [Secret][google.cloud.secretmanager.v1.Secret] to associate with the
+   *  [SecretVersion][google.cloud.secretmanager.v1.SecretVersion] in the format `projects/* /secrets/*`.
    */
-  // const resource = 'abc123'
+  // const parent = 'abc123'
   /**
-   *  The set of permissions to check for the `resource`. Permissions with
-   *  wildcards (such as '*' or 'storage.*') are not allowed. For more
-   *  information see
-   *  [IAM Overview](https://cloud.google.com/iam/docs/overview#permissions).
+   *  Required. The secret payload of the [SecretVersion][google.cloud.secretmanager.v1.SecretVersion].
    */
-  // const permissions = 'abc123'
+  // const payload = ''
 
   // Imports the Secretmanager library
-  const {SecretManagerServiceClient} = require('@google-cloud/secret-manager').v1;
+  const {SecretManagerServiceClient} =
+    require('@google-cloud/secret-manager').v1;
 
   // Instantiates a client
   const secretmanagerClient = new SecretManagerServiceClient();
 
-  async function testIamPermissions() {
+  async function addSecretVersion() {
     // Construct request
     const request = {
-      resource,
-      permissions,
+      parent,
+      payload,
     };
 
     // Run request
-    const response = await secretmanagerClient.testIamPermissions(request);
+    const response = await secretmanagerClient.addSecretVersion(request);
     console.log(response);
   }
 
-  testIamPermissions();
-  // [END secretmanager_test_iam_permissions_sample]
+  addSecretVersion();
+  // [END secretmanager_add_secret_version_sample]
 }
 
 process.on('unhandledRejection', err => {

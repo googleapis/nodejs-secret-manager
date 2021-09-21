@@ -12,47 +12,45 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
-function main(resource, policy) {
-  // [START secretmanager_set_iam_policy_sample]
+function main(name) {
+  // [START secretmanager_delete_secret_sample]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  REQUIRED: The resource for which the policy is being specified.
-   *  See the operation documentation for the appropriate value for this field.
+   *  Required. The resource name of the [Secret][google.cloud.secretmanager.v1.Secret] to delete in the format
+   *  `projects/* /secrets/*`.
    */
-  // const resource = 'abc123'
+  // const name = 'abc123'
   /**
-   *  REQUIRED: The complete policy to be applied to the `resource`. The size of
-   *  the policy is limited to a few 10s of KB. An empty policy is a
-   *  valid policy but certain Cloud Platform services (such as Projects)
-   *  might reject them.
+   *  Optional. Etag of the [Secret][google.cloud.secretmanager.v1.Secret]. The request succeeds if it matches
+   *  the etag of the currently stored secret object. If the etag is omitted,
+   *  the request succeeds.
    */
-  // const policy = ''
+  // const etag = 'abc123'
 
   // Imports the Secretmanager library
-  const {SecretManagerServiceClient} = require('@google-cloud/secret-manager').v1;
+  const {SecretManagerServiceClient} =
+    require('@google-cloud/secret-manager').v1;
 
   // Instantiates a client
   const secretmanagerClient = new SecretManagerServiceClient();
 
-  async function setIamPolicy() {
+  async function deleteSecret() {
     // Construct request
     const request = {
-      resource,
-      policy,
+      name,
     };
 
     // Run request
-    const response = await secretmanagerClient.setIamPolicy(request);
+    const response = await secretmanagerClient.deleteSecret(request);
     console.log(response);
   }
 
-  setIamPolicy();
-  // [END secretmanager_set_iam_policy_sample]
+  deleteSecret();
+  // [END secretmanager_delete_secret_sample]
 }
 
 process.on('unhandledRejection', err => {

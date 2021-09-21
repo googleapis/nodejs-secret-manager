@@ -12,45 +12,41 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
 function main(name) {
-  // [START secretmanager_delete_secret_sample]
+  // [START secretmanager_get_secret_version_sample]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  Required. The resource name of the [Secret][google.cloud.secretmanager.v1.Secret] to delete in the format
-   *  `projects/* /secrets/*`.
+   *  Required. The resource name of the [SecretVersion][google.cloud.secretmanager.v1.SecretVersion] in the format
+   *  `projects/* /secrets/* /versions/*`.
+   *  `projects/* /secrets/* /versions/latest` is an alias to the most recently
+   *  created [SecretVersion][google.cloud.secretmanager.v1.SecretVersion].
    */
   // const name = 'abc123'
-  /**
-   *  Optional. Etag of the [Secret][google.cloud.secretmanager.v1.Secret]. The request succeeds if it matches
-   *  the etag of the currently stored secret object. If the etag is omitted,
-   *  the request succeeds.
-   */
-  // const etag = 'abc123'
 
   // Imports the Secretmanager library
-  const {SecretManagerServiceClient} = require('@google-cloud/secret-manager').v1;
+  const {SecretManagerServiceClient} =
+    require('@google-cloud/secret-manager').v1;
 
   // Instantiates a client
   const secretmanagerClient = new SecretManagerServiceClient();
 
-  async function deleteSecret() {
+  async function getSecretVersion() {
     // Construct request
     const request = {
       name,
     };
 
     // Run request
-    const response = await secretmanagerClient.deleteSecret(request);
+    const response = await secretmanagerClient.getSecretVersion(request);
     console.log(response);
   }
 
-  deleteSecret();
-  // [END secretmanager_delete_secret_sample]
+  getSecretVersion();
+  // [END secretmanager_get_secret_version_sample]
 }
 
 process.on('unhandledRejection', err => {
