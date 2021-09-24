@@ -12,52 +12,45 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
-function main(parent, secretId, secret) {
-  // [START secretmanager_v1_generated_SecretManagerService_CreateSecret_async]
+function main(name) {
+  // [START secretmanager_v1_generated_SecretManagerService_EnableSecretVersion_async]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  Required. The resource name of the project to associate with the
-   *  [Secret][google.cloud.secretmanager.v1.Secret], in the format `projects/*`.
+   *  Required. The resource name of the [SecretVersion][google.cloud.secretmanager.v1.SecretVersion] to enable in the format
+   *  `projects/* /secrets/* /versions/*`.
    */
-  // const parent = 'abc123'
+  // const name = 'abc123'
   /**
-   *  Required. This must be unique within the project.
-   *  A secret ID is a string with a maximum length of 255 characters and can
-   *  contain uppercase and lowercase letters, numerals, and the hyphen (`-`) and
-   *  underscore (`_`) characters.
+   *  Optional. Etag of the [SecretVersion][google.cloud.secretmanager.v1.SecretVersion]. The request succeeds if it matches
+   *  the etag of the currently stored secret version object. If the etag is
+   *  omitted, the request succeeds.
    */
-  // const secretId = 'abc123'
-  /**
-   *  Required. A [Secret][google.cloud.secretmanager.v1.Secret] with initial field values.
-   */
-  // const secret = ''
+  // const etag = 'abc123'
 
   // Imports the Secretmanager library
-  const {SecretManagerServiceClient} = require('@google-cloud/secret-manager').v1;
+  const {SecretManagerServiceClient} =
+    require('@google-cloud/secret-manager').v1;
 
   // Instantiates a client
   const secretmanagerClient = new SecretManagerServiceClient();
 
-  async function createSecret() {
+  async function enableSecretVersion() {
     // Construct request
     const request = {
-      parent,
-      secretId,
-      secret,
+      name,
     };
 
     // Run request
-    const response = await secretmanagerClient.createSecret(request);
+    const response = await secretmanagerClient.enableSecretVersion(request);
     console.log(response);
   }
 
-  createSecret();
-  // [END secretmanager_v1_generated_SecretManagerService_CreateSecret_async]
+  enableSecretVersion();
+  // [END secretmanager_v1_generated_SecretManagerService_EnableSecretVersion_async]
 }
 
 process.on('unhandledRejection', err => {

@@ -12,44 +12,38 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
-function main(parent, payload) {
-  // [START secretmanager_v1_generated_SecretManagerService_AddSecretVersion_async]
+function main(name) {
+  // [START secretmanager_v1_generated_SecretManagerService_GetSecret_async]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  Required. The resource name of the [Secret][google.cloud.secretmanager.v1.Secret] to associate with the
-   *  [SecretVersion][google.cloud.secretmanager.v1.SecretVersion] in the format `projects/* /secrets/*`.
+   *  Required. The resource name of the [Secret][google.cloud.secretmanager.v1.Secret], in the format `projects/* /secrets/*`.
    */
-  // const parent = 'abc123'
-  /**
-   *  Required. The secret payload of the [SecretVersion][google.cloud.secretmanager.v1.SecretVersion].
-   */
-  // const payload = ''
+  // const name = 'abc123'
 
   // Imports the Secretmanager library
-  const {SecretManagerServiceClient} = require('@google-cloud/secret-manager').v1;
+  const {SecretManagerServiceClient} =
+    require('@google-cloud/secret-manager').v1;
 
   // Instantiates a client
   const secretmanagerClient = new SecretManagerServiceClient();
 
-  async function addSecretVersion() {
+  async function getSecret() {
     // Construct request
     const request = {
-      parent,
-      payload,
+      name,
     };
 
     // Run request
-    const response = await secretmanagerClient.addSecretVersion(request);
+    const response = await secretmanagerClient.getSecret(request);
     console.log(response);
   }
 
-  addSecretVersion();
-  // [END secretmanager_v1_generated_SecretManagerService_AddSecretVersion_async]
+  getSecret();
+  // [END secretmanager_v1_generated_SecretManagerService_GetSecret_async]
 }
 
 process.on('unhandledRejection', err => {

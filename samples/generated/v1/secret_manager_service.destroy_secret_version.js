@@ -12,44 +12,45 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
-function main(resource) {
-  // [START secretmanager_v1_generated_SecretManagerService_GetIamPolicy_async]
+function main(name) {
+  // [START secretmanager_v1_generated_SecretManagerService_DestroySecretVersion_async]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  REQUIRED: The resource for which the policy is being requested.
-   *  See the operation documentation for the appropriate value for this field.
+   *  Required. The resource name of the [SecretVersion][google.cloud.secretmanager.v1.SecretVersion] to destroy in the format
+   *  `projects/* /secrets/* /versions/*`.
    */
-  // const resource = 'abc123'
+  // const name = 'abc123'
   /**
-   *  OPTIONAL: A `GetPolicyOptions` object for specifying options to
-   *  `GetIamPolicy`. This field is only used by Cloud IAM.
+   *  Optional. Etag of the [SecretVersion][google.cloud.secretmanager.v1.SecretVersion]. The request succeeds if it matches
+   *  the etag of the currently stored secret version object. If the etag is
+   *  omitted, the request succeeds.
    */
-  // const options = ''
+  // const etag = 'abc123'
 
   // Imports the Secretmanager library
-  const {SecretManagerServiceClient} = require('@google-cloud/secret-manager').v1;
+  const {SecretManagerServiceClient} =
+    require('@google-cloud/secret-manager').v1;
 
   // Instantiates a client
   const secretmanagerClient = new SecretManagerServiceClient();
 
-  async function getIamPolicy() {
+  async function destroySecretVersion() {
     // Construct request
     const request = {
-      resource,
+      name,
     };
 
     // Run request
-    const response = await secretmanagerClient.getIamPolicy(request);
+    const response = await secretmanagerClient.destroySecretVersion(request);
     console.log(response);
   }
 
-  getIamPolicy();
-  // [END secretmanager_v1_generated_SecretManagerService_GetIamPolicy_async]
+  destroySecretVersion();
+  // [END secretmanager_v1_generated_SecretManagerService_DestroySecretVersion_async]
 }
 
 process.on('unhandledRejection', err => {

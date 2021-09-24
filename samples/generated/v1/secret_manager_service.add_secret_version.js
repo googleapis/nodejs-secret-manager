@@ -12,45 +12,44 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
-function main(name) {
-  // [START secretmanager_v1_generated_SecretManagerService_DeleteSecret_async]
+function main(parent, payload) {
+  // [START secretmanager_v1_generated_SecretManagerService_AddSecretVersion_async]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  Required. The resource name of the [Secret][google.cloud.secretmanager.v1.Secret] to delete in the format
-   *  `projects/* /secrets/*`.
+   *  Required. The resource name of the [Secret][google.cloud.secretmanager.v1.Secret] to associate with the
+   *  [SecretVersion][google.cloud.secretmanager.v1.SecretVersion] in the format `projects/* /secrets/*`.
    */
-  // const name = 'abc123'
+  // const parent = 'abc123'
   /**
-   *  Optional. Etag of the [Secret][google.cloud.secretmanager.v1.Secret]. The request succeeds if it matches
-   *  the etag of the currently stored secret object. If the etag is omitted,
-   *  the request succeeds.
+   *  Required. The secret payload of the [SecretVersion][google.cloud.secretmanager.v1.SecretVersion].
    */
-  // const etag = 'abc123'
+  // const payload = ''
 
   // Imports the Secretmanager library
-  const {SecretManagerServiceClient} = require('@google-cloud/secret-manager').v1;
+  const {SecretManagerServiceClient} =
+    require('@google-cloud/secret-manager').v1;
 
   // Instantiates a client
   const secretmanagerClient = new SecretManagerServiceClient();
 
-  async function deleteSecret() {
+  async function addSecretVersion() {
     // Construct request
     const request = {
-      name,
+      parent,
+      payload,
     };
 
     // Run request
-    const response = await secretmanagerClient.deleteSecret(request);
+    const response = await secretmanagerClient.addSecretVersion(request);
     console.log(response);
   }
 
-  deleteSecret();
-  // [END secretmanager_v1_generated_SecretManagerService_DeleteSecret_async]
+  addSecretVersion();
+  // [END secretmanager_v1_generated_SecretManagerService_AddSecretVersion_async]
 }
 
 process.on('unhandledRejection', err => {
