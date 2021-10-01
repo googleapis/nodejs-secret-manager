@@ -15,10 +15,10 @@ steps:
 - name: 'ubuntu'
   entrypoint: 'bash'
   args:
-    [
-      '-c',
-      'chmod -R 777 /builder',
-    ]
+  - '-c'
+  - |-
+    chmod -R 777 /builder
+    chmod -R 777 /workspace
 - name: 'gcr.io/cloud-devrel-kokoro-resources/node:14-user'
   entrypoint: 'bash'
   args:
