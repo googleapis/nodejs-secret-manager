@@ -15,8 +15,6 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['run', '--user=root', '--volume', '/workspace:/workspace', '--rm', 'ubuntu', 'ls', '-l']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['run', '--user=root', '--volume', '/workspace:/workspace', '--rm', 'ubuntu', 'ls', '-l', '/workspace']
+    args: ['run', '--user=root', '--volume', '/workspace:/workspace', '--workdir=/workspace', '--rm', 'gcr.io/cloud-devrel-kokoro-resources/node:14-user', 'npm', 'i']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['run', '--user=root', '--volume', '/workspace:/workspace', '--rm', 'gcr.io/cloud-devrel-kokoro-resources/node:14-user', 'npm', 'i']
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['run', '--user=root', '--volume', '/workspace:/workspace', '--rm', 'gcr.io/cloud-devrel-kokoro-resources/node:14-user', 'npm', 't']
+    args: ['run', '--user=root', '--volume', '/workspace:/workspace', '--workdir=/workspace', '--rm', 'gcr.io/cloud-devrel-kokoro-resources/node:14-user', 'npm', 't']
