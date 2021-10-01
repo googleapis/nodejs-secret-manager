@@ -12,6 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 steps:
+- name: 'ubuntu'
+  entrypoint: 'bash'
+  args:
+    [
+      '-c',
+      'chmod -R 777 /workspace',
+    ]
 - name: 'gcr.io/cloud-devrel-kokoro-resources/node:14-user'
   entrypoint: 'bash'
   args:
