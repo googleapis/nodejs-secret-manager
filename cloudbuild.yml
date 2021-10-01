@@ -12,19 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 steps:
-- name: 'ubuntu'
-  entrypoint: 'bash'
-  args:
-  - '-c'
-  - |-
-    chmod -R 777 /builder
-    chmod -R 777 /workspace
-- name: 'gcr.io/cloud-devrel-kokoro-resources/node:14-user'
-  entrypoint: 'bash'
-  args:
-  - '-eEuo'
-  - 'pipefail'
-  - '-c'
-  - |-
-    npm i
-    npm run test
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['run', '--user=root', 'gcr.io/cloud-devrel-kokoro-resources/node:14-user', 'npm', 'i']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['run', '--user=root', 'gcr.io/cloud-devrel-kokoro-resources/node:14-user', 'npm', 't']
