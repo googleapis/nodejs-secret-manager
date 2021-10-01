@@ -19,5 +19,6 @@ steps:
   - 'pipefail'
   - '-c'
   - |-
+    su root
     npm i
     npm run test
