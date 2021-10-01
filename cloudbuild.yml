@@ -13,6 +13,6 @@
 # limitations under the License.
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['run', '--user=root', 'gcr.io/cloud-devrel-kokoro-resources/node:14-user', 'npm', 'i']
+    args: ['run', '--user=root', '--volume', '/workspace:/workspace', 'gcr.io/cloud-devrel-kokoro-resources/node:14-user', 'npm', 'i']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['run', '--user=root', 'gcr.io/cloud-devrel-kokoro-resources/node:14-user', 'npm', 't']
+    args: ['run', '--user=root', '--volume', '/workspace:/workspace', 'gcr.io/cloud-devrel-kokoro-resources/node:14-user', 'npm', 't']
