@@ -448,6 +448,27 @@ export class SecretManagerServiceClient {
     this.initialize();
     return this.innerApiCalls.createSecret(request, options, callback);
   }
+  /**
+   * Creates a new {@link google.cloud.secretmanager.v1.SecretVersion|SecretVersion} containing secret data and attaches
+   * it to an existing {@link google.cloud.secretmanager.v1.Secret|Secret}.
+   *
+   * @param {Object} request
+   *   The request object that will be sent.
+   * @param {string} request.parent
+   *   Required. The resource name of the {@link google.cloud.secretmanager.v1.Secret|Secret} to associate with the
+   *   {@link google.cloud.secretmanager.v1.SecretVersion|SecretVersion} in the format `projects/* /secrets/*`.
+   * @param {google.cloud.secretmanager.v1.SecretPayload} request.payload
+   *   Required. The secret payload of the {@link google.cloud.secretmanager.v1.SecretVersion|SecretVersion}.
+   * @param {object} [options]
+   *   Call options. See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions} for more details.
+   * @returns {Promise} - The promise which resolves to an array.
+   *   The first element of the array is an object representing [SecretVersion]{@link google.cloud.secretmanager.v1.SecretVersion}.
+   *   Please see the
+   *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#regular-methods)
+   *   for more details and examples.
+   * @example
+   * const [response] = await client.addSecretVersion(request);
+   */
   addSecretVersion(
     request?: protos.google.cloud.secretmanager.v1.IAddSecretVersionRequest,
     options?: CallOptions
@@ -479,27 +500,6 @@ export class SecretManagerServiceClient {
       {} | null | undefined
     >
   ): void;
-  /**
-   * Creates a new {@link google.cloud.secretmanager.v1.SecretVersion|SecretVersion} containing secret data and attaches
-   * it to an existing {@link google.cloud.secretmanager.v1.Secret|Secret}.
-   *
-   * @param {Object} request
-   *   The request object that will be sent.
-   * @param {string} request.parent
-   *   Required. The resource name of the {@link google.cloud.secretmanager.v1.Secret|Secret} to associate with the
-   *   {@link google.cloud.secretmanager.v1.SecretVersion|SecretVersion} in the format `projects/* /secrets/*`.
-   * @param {google.cloud.secretmanager.v1.SecretPayload} request.payload
-   *   Required. The secret payload of the {@link google.cloud.secretmanager.v1.SecretVersion|SecretVersion}.
-   * @param {object} [options]
-   *   Call options. See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions} for more details.
-   * @returns {Promise} - The promise which resolves to an array.
-   *   The first element of the array is an object representing [SecretVersion]{@link google.cloud.secretmanager.v1.SecretVersion}.
-   *   Please see the
-   *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#regular-methods)
-   *   for more details and examples.
-   * @example
-   * const [response] = await client.addSecretVersion(request);
-   */
   addSecretVersion(
     request?: protos.google.cloud.secretmanager.v1.IAddSecretVersionRequest,
     optionsOrCallback?:
