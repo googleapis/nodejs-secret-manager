@@ -12,52 +12,47 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
-function main(parent, secretId, secret) {
-  // [START secretmanager_v1_generated_SecretManagerService_CreateSecret_async]
+function main(resource, policy) {
+  // [START secretmanager_v1_generated_SecretManagerService_SetIamPolicy_async]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  Required. The resource name of the project to associate with the
-   *  Secret google.cloud.secretmanager.v1.Secret, in the format `projects/*`.
+   *  REQUIRED: The resource for which the policy is being specified.
+   *  See the operation documentation for the appropriate value for this field.
    */
-  // const parent = 'abc123'
+  // const resource = 'abc123'
   /**
-   *  Required. This must be unique within the project.
-   *  A secret ID is a string with a maximum length of 255 characters and can
-   *  contain uppercase and lowercase letters, numerals, and the hyphen (`-`) and
-   *  underscore (`_`) characters.
+   *  REQUIRED: The complete policy to be applied to the `resource`. The size of
+   *  the policy is limited to a few 10s of KB. An empty policy is a
+   *  valid policy but certain Cloud Platform services (such as Projects)
+   *  might reject them.
    */
-  // const secretId = 'abc123'
-  /**
-   *  Required. A Secret google.cloud.secretmanager.v1.Secret  with initial field values.
-   */
-  // const secret = {}
+  // const policy = {}
 
   // Imports the Secretmanager library
-  const {SecretManagerServiceClient} = require('@google-cloud/secret-manager').v1;
+  const {SecretManagerServiceClient} =
+    require('@google-cloud/secret-manager').v1;
 
   // Instantiates a client
   const secretmanagerClient = new SecretManagerServiceClient();
 
-  async function callCreateSecret() {
+  async function callSetIamPolicy() {
     // Construct request
     const request = {
-      parent,
-      secretId,
-      secret,
+      resource,
+      policy,
     };
 
     // Run request
-    const response = await secretmanagerClient.createSecret(request);
+    const response = await secretmanagerClient.setIamPolicy(request);
     console.log(response);
   }
 
-  callCreateSecret();
-  // [END secretmanager_v1_generated_SecretManagerService_CreateSecret_async]
+  callSetIamPolicy();
+  // [END secretmanager_v1_generated_SecretManagerService_SetIamPolicy_async]
 }
 
 process.on('unhandledRejection', err => {

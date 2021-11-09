@@ -12,45 +12,45 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
 function main(name) {
-  // [START secretmanager_v1_generated_SecretManagerService_DeleteSecret_async]
+  // [START secretmanager_v1_generated_SecretManagerService_DestroySecretVersion_async]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  Required. The resource name of the Secret google.cloud.secretmanager.v1.Secret  to delete in the format
-   *  `projects/* /secrets/*`.
+   *  Required. The resource name of the SecretVersion google.cloud.secretmanager.v1.SecretVersion  to destroy in the format
+   *  `projects/* /secrets/* /versions/*`.
    */
   // const name = 'abc123'
   /**
-   *  Optional. Etag of the Secret google.cloud.secretmanager.v1.Secret. The request succeeds if it matches
-   *  the etag of the currently stored secret object. If the etag is omitted,
-   *  the request succeeds.
+   *  Optional. Etag of the SecretVersion google.cloud.secretmanager.v1.SecretVersion. The request succeeds if it matches
+   *  the etag of the currently stored secret version object. If the etag is
+   *  omitted, the request succeeds.
    */
   // const etag = 'abc123'
 
   // Imports the Secretmanager library
-  const {SecretManagerServiceClient} = require('@google-cloud/secret-manager').v1;
+  const {SecretManagerServiceClient} =
+    require('@google-cloud/secret-manager').v1;
 
   // Instantiates a client
   const secretmanagerClient = new SecretManagerServiceClient();
 
-  async function callDeleteSecret() {
+  async function callDestroySecretVersion() {
     // Construct request
     const request = {
       name,
     };
 
     // Run request
-    const response = await secretmanagerClient.deleteSecret(request);
+    const response = await secretmanagerClient.destroySecretVersion(request);
     console.log(response);
   }
 
-  callDeleteSecret();
-  // [END secretmanager_v1_generated_SecretManagerService_DeleteSecret_async]
+  callDestroySecretVersion();
+  // [END secretmanager_v1_generated_SecretManagerService_DestroySecretVersion_async]
 }
 
 process.on('unhandledRejection', err => {

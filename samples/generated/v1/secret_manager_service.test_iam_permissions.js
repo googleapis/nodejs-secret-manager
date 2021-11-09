@@ -12,38 +12,47 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
-function main(name) {
-  // [START secretmanager_v1_generated_SecretManagerService_GetSecret_async]
+function main(resource, permissions) {
+  // [START secretmanager_v1_generated_SecretManagerService_TestIamPermissions_async]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  Required. The resource name of the Secret google.cloud.secretmanager.v1.Secret, in the format `projects/* /secrets/*`.
+   *  REQUIRED: The resource for which the policy detail is being requested.
+   *  See the operation documentation for the appropriate value for this field.
    */
-  // const name = 'abc123'
+  // const resource = 'abc123'
+  /**
+   *  The set of permissions to check for the `resource`. Permissions with
+   *  wildcards (such as '*' or 'storage.*') are not allowed. For more
+   *  information see
+   *  IAM Overview (https://cloud.google.com/iam/docs/overview#permissions).
+   */
+  // const permissions = 'abc123'
 
   // Imports the Secretmanager library
-  const {SecretManagerServiceClient} = require('@google-cloud/secret-manager').v1;
+  const {SecretManagerServiceClient} =
+    require('@google-cloud/secret-manager').v1;
 
   // Instantiates a client
   const secretmanagerClient = new SecretManagerServiceClient();
 
-  async function callGetSecret() {
+  async function callTestIamPermissions() {
     // Construct request
     const request = {
-      name,
+      resource,
+      permissions,
     };
 
     // Run request
-    const response = await secretmanagerClient.getSecret(request);
+    const response = await secretmanagerClient.testIamPermissions(request);
     console.log(response);
   }
 
-  callGetSecret();
-  // [END secretmanager_v1_generated_SecretManagerService_GetSecret_async]
+  callTestIamPermissions();
+  // [END secretmanager_v1_generated_SecretManagerService_TestIamPermissions_async]
 }
 
 process.on('unhandledRejection', err => {

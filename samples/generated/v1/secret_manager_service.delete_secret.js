@@ -12,47 +12,45 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
-function main(resource, permissions) {
-  // [START secretmanager_v1_generated_SecretManagerService_TestIamPermissions_async]
+function main(name) {
+  // [START secretmanager_v1_generated_SecretManagerService_DeleteSecret_async]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  REQUIRED: The resource for which the policy detail is being requested.
-   *  See the operation documentation for the appropriate value for this field.
+   *  Required. The resource name of the Secret google.cloud.secretmanager.v1.Secret  to delete in the format
+   *  `projects/* /secrets/*`.
    */
-  // const resource = 'abc123'
+  // const name = 'abc123'
   /**
-   *  The set of permissions to check for the `resource`. Permissions with
-   *  wildcards (such as '*' or 'storage.*') are not allowed. For more
-   *  information see
-   *  IAM Overview (https://cloud.google.com/iam/docs/overview#permissions).
+   *  Optional. Etag of the Secret google.cloud.secretmanager.v1.Secret. The request succeeds if it matches
+   *  the etag of the currently stored secret object. If the etag is omitted,
+   *  the request succeeds.
    */
-  // const permissions = 'abc123'
+  // const etag = 'abc123'
 
   // Imports the Secretmanager library
-  const {SecretManagerServiceClient} = require('@google-cloud/secret-manager').v1;
+  const {SecretManagerServiceClient} =
+    require('@google-cloud/secret-manager').v1;
 
   // Instantiates a client
   const secretmanagerClient = new SecretManagerServiceClient();
 
-  async function callTestIamPermissions() {
+  async function callDeleteSecret() {
     // Construct request
     const request = {
-      resource,
-      permissions,
+      name,
     };
 
     // Run request
-    const response = await secretmanagerClient.testIamPermissions(request);
+    const response = await secretmanagerClient.deleteSecret(request);
     console.log(response);
   }
 
-  callTestIamPermissions();
-  // [END secretmanager_v1_generated_SecretManagerService_TestIamPermissions_async]
+  callDeleteSecret();
+  // [END secretmanager_v1_generated_SecretManagerService_DeleteSecret_async]
 }
 
 process.on('unhandledRejection', err => {

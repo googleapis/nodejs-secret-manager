@@ -12,47 +12,41 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
-function main(resource, policy) {
-  // [START secretmanager_v1_generated_SecretManagerService_SetIamPolicy_async]
+function main(name) {
+  // [START secretmanager_v1_generated_SecretManagerService_GetSecretVersion_async]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  REQUIRED: The resource for which the policy is being specified.
-   *  See the operation documentation for the appropriate value for this field.
+   *  Required. The resource name of the SecretVersion google.cloud.secretmanager.v1.SecretVersion  in the format
+   *  `projects/* /secrets/* /versions/*`.
+   *  `projects/* /secrets/* /versions/latest` is an alias to the most recently
+   *  created SecretVersion google.cloud.secretmanager.v1.SecretVersion.
    */
-  // const resource = 'abc123'
-  /**
-   *  REQUIRED: The complete policy to be applied to the `resource`. The size of
-   *  the policy is limited to a few 10s of KB. An empty policy is a
-   *  valid policy but certain Cloud Platform services (such as Projects)
-   *  might reject them.
-   */
-  // const policy = {}
+  // const name = 'abc123'
 
   // Imports the Secretmanager library
-  const {SecretManagerServiceClient} = require('@google-cloud/secret-manager').v1;
+  const {SecretManagerServiceClient} =
+    require('@google-cloud/secret-manager').v1;
 
   // Instantiates a client
   const secretmanagerClient = new SecretManagerServiceClient();
 
-  async function callSetIamPolicy() {
+  async function callGetSecretVersion() {
     // Construct request
     const request = {
-      resource,
-      policy,
+      name,
     };
 
     // Run request
-    const response = await secretmanagerClient.setIamPolicy(request);
+    const response = await secretmanagerClient.getSecretVersion(request);
     console.log(response);
   }
 
-  callSetIamPolicy();
-  // [END secretmanager_v1_generated_SecretManagerService_SetIamPolicy_async]
+  callGetSecretVersion();
+  // [END secretmanager_v1_generated_SecretManagerService_GetSecretVersion_async]
 }
 
 process.on('unhandledRejection', err => {

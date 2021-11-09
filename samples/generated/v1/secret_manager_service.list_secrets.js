@@ -12,18 +12,16 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
 function main(parent) {
-  // [START secretmanager_v1_generated_SecretManagerService_ListSecretVersions_async]
+  // [START secretmanager_v1_generated_SecretManagerService_ListSecrets_async]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  Required. The resource name of the Secret google.cloud.secretmanager.v1.Secret  associated with the
-   *  SecretVersions google.cloud.secretmanager.v1.SecretVersion  to list, in the format
-   *  `projects/* /secrets/*`.
+   *  Required. The resource name of the project associated with the
+   *  Secrets google.cloud.secretmanager.v1.Secret, in the format `projects/*`.
    */
   // const parent = 'abc123'
   /**
@@ -34,39 +32,40 @@ function main(parent) {
   // const pageSize = 1234
   /**
    *  Optional. Pagination token, returned earlier via
-   *  ListSecretVersionsResponse.next_page_token .
+   *  ListSecretsResponse.next_page_token google.cloud.secretmanager.v1.ListSecretsResponse.next_page_token.
    */
   // const pageToken = 'abc123'
   /**
    *  Optional. Filter string, adhering to the rules in
    *  List-operation
    *  filtering (https://cloud.google.com/secret-manager/docs/filtering). List
-   *  only secret versions matching the filter. If filter is empty, all secret
-   *  versions are listed.
+   *  only secrets matching the filter. If filter is empty, all secrets are
+   *  listed.
    */
   // const filter = 'abc123'
 
   // Imports the Secretmanager library
-  const {SecretManagerServiceClient} = require('@google-cloud/secret-manager').v1;
+  const {SecretManagerServiceClient} =
+    require('@google-cloud/secret-manager').v1;
 
   // Instantiates a client
   const secretmanagerClient = new SecretManagerServiceClient();
 
-  async function callListSecretVersions() {
+  async function callListSecrets() {
     // Construct request
     const request = {
       parent,
     };
 
     // Run request
-    const iterable = await secretmanagerClient.listSecretVersionsAsync(request);
+    const iterable = await secretmanagerClient.listSecretsAsync(request);
     for await (const response of iterable) {
-        console.log(response);
+      console.log(response);
     }
   }
 
-  callListSecretVersions();
-  // [END secretmanager_v1_generated_SecretManagerService_ListSecretVersions_async]
+  callListSecrets();
+  // [END secretmanager_v1_generated_SecretManagerService_ListSecrets_async]
 }
 
 process.on('unhandledRejection', err => {

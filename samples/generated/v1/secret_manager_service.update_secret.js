@@ -12,44 +12,43 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
-function main(resource) {
-  // [START secretmanager_v1_generated_SecretManagerService_GetIamPolicy_async]
+function main(secret, updateMask) {
+  // [START secretmanager_v1_generated_SecretManagerService_UpdateSecret_async]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  REQUIRED: The resource for which the policy is being requested.
-   *  See the operation documentation for the appropriate value for this field.
+   *  Required. Secret google.cloud.secretmanager.v1.Secret  with updated field values.
    */
-  // const resource = 'abc123'
+  // const secret = {}
   /**
-   *  OPTIONAL: A `GetPolicyOptions` object for specifying options to
-   *  `GetIamPolicy`. This field is only used by Cloud IAM.
+   *  Required. Specifies the fields to be updated.
    */
-  // const options = {}
+  // const updateMask = {}
 
   // Imports the Secretmanager library
-  const {SecretManagerServiceClient} = require('@google-cloud/secret-manager').v1;
+  const {SecretManagerServiceClient} =
+    require('@google-cloud/secret-manager').v1;
 
   // Instantiates a client
   const secretmanagerClient = new SecretManagerServiceClient();
 
-  async function callGetIamPolicy() {
+  async function callUpdateSecret() {
     // Construct request
     const request = {
-      resource,
+      secret,
+      updateMask,
     };
 
     // Run request
-    const response = await secretmanagerClient.getIamPolicy(request);
+    const response = await secretmanagerClient.updateSecret(request);
     console.log(response);
   }
 
-  callGetIamPolicy();
-  // [END secretmanager_v1_generated_SecretManagerService_GetIamPolicy_async]
+  callUpdateSecret();
+  // [END secretmanager_v1_generated_SecretManagerService_UpdateSecret_async]
 }
 
 process.on('unhandledRejection', err => {
