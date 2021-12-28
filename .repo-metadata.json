@@ -13,5 +13,5 @@
   "issue_tracker": "https://issuetracker.google.com/issues/new?component=784854",
   "codeowner_team": "@googleapis/api-secrets",
   "api_shortname": "secretmanager",
-  "library_type": ""
+  "library_type": "GAPIC_AUTO"
 }
