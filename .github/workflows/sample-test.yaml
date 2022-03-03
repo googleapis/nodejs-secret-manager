@@ -35,7 +35,7 @@ jobs:
       working-directory: samples
     - run: npm install
       working-directory: samples
-    - run: npm run sample-test
+    - run: npm run samples-test
       env:
         MOCHA_REPORTER_OUTPUT: test_output_sponge_log.xml
         MOCHA_REPORTER: xunit
