@@ -37,6 +37,7 @@ jobs:
       working-directory: samples
     - run: npm run samples-test
       env:
+        GOOGLE_CLOUD_PROJECT: long-door-651
         MOCHA_REPORTER_OUTPUT: test_output_sponge_log.xml
         MOCHA_REPORTER: xunit
     - if: ${{ github.event.action == 'labeled' && github.event.label.name == 'actions:force-run' }}
