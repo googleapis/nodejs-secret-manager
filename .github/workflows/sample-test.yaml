@@ -31,10 +31,6 @@ jobs:
       with:
         node-version: 14
     - run: npm install
-    - run: npm link ../
-      working-directory: ./samples
-    - run: npm install
-      working-directory: ./samples
     - run: npm run samples-test
       env:
         GCLOUD_PROJECT: long-door-651
