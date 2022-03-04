@@ -21,7 +21,7 @@ const {v4} = require('uuid');
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 const client = new SecretManagerServiceClient();
 
-const projectId = process.env.GCLOUD_PROJECT;
+const projectId = process.env.GOOGLE_CLOUD_PROJECT;
 const secretId = v4();
 const payload = 'my super secret data';
 const iamUser = 'user:sethvargo@google.com';
