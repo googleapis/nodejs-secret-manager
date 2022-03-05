@@ -1,4 +1,4 @@
-name: actions-sample-test
+name: actions-samples-test
 on:
   push:
     branches:
@@ -9,7 +9,8 @@ on:
   schedule:
   - cron:  '0 2 * * *'
 jobs:
-  actions-sample-test:
+  build:
+    name: actions-samples-test
     if: ${{ github.event.action != 'labeled' || github.event.label.name == 'actions:force-run' }}
     runs-on: ubuntu-latest
     permissions:
