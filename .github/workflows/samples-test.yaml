@@ -39,7 +39,6 @@ jobs:
     - run: npm run samples-test || (cat ./samples/test_output_sponge_log.xml && false)
       env:
         GCLOUD_PROJECT: long-door-651
-        DEBUG: mocha*
         MOCHA_REPORTER_OUTPUT: test_output_sponge_log.xml
         MOCHA_REPORTER: xunit
     - if: ${{ github.event.action == 'labeled' && github.event.label.name == 'actions:force-run' }}
