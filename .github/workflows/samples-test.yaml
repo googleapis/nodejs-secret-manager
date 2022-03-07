@@ -36,7 +36,7 @@ jobs:
       working-directory: samples
     - run: npm install
       working-directory: samples
-    - run: npm run samples-test || cat ./samples/test_output_sponge_log.xml && false
+    - run: npm run samples-test || (cat ./samples/test_output_sponge_log.xml && false)
       env:
         GCLOUD_PROJECT: long-door-651
         DEBUG: mocha*
