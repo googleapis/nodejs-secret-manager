@@ -4,6 +4,7 @@ on:
     branches:
     - main
   pull_request:
+    types: [opened, reopened, synchronized, labeled]
   pull_request_target:
     types: [labeled]
   schedule:
@@ -11,7 +12,7 @@ on:
 jobs:
   build:
     name: actions-samples-test
-    if: ${{ (github.event.action != 'labeled' && github.event.pull_request.head.repo.full_name == github.event.pull_request.base.repo.full_name) || github.event.label.name == 'actions:force-run' }}
+    if: ${{ github.event.action != 'labeled' || (github.event.label.name == 'actions:force-run' && github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name) }}
     runs-on: ubuntu-latest
     permissions:
       contents: 'write'
