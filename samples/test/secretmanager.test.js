@@ -167,4 +167,9 @@ describe('Secret Manager samples', () => {
     const output = execSync(`node destroySecretVersion.js ${version.name}`);
     assert.match(output, new RegExp(`Destroyed ${version.name}`));
   });
+
+  it('fails intentionally', async () => {
+    assert.fail('Intentionally failing');
+  });
+
 });
