@@ -3764,7 +3764,7 @@
                         };
     
                         /**
-                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService#listSecrets}.
+                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService|listSecrets}.
                          * @memberof google.cloud.secretmanager.v1.SecretManagerService
                          * @typedef ListSecretsCallback
                          * @type {function}
@@ -3797,7 +3797,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService#createSecret}.
+                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService|createSecret}.
                          * @memberof google.cloud.secretmanager.v1.SecretManagerService
                          * @typedef CreateSecretCallback
                          * @type {function}
@@ -3830,7 +3830,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService#addSecretVersion}.
+                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService|addSecretVersion}.
                          * @memberof google.cloud.secretmanager.v1.SecretManagerService
                          * @typedef AddSecretVersionCallback
                          * @type {function}
@@ -3863,7 +3863,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService#getSecret}.
+                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService|getSecret}.
                          * @memberof google.cloud.secretmanager.v1.SecretManagerService
                          * @typedef GetSecretCallback
                          * @type {function}
@@ -3896,7 +3896,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService#updateSecret}.
+                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService|updateSecret}.
                          * @memberof google.cloud.secretmanager.v1.SecretManagerService
                          * @typedef UpdateSecretCallback
                          * @type {function}
@@ -3929,7 +3929,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService#deleteSecret}.
+                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService|deleteSecret}.
                          * @memberof google.cloud.secretmanager.v1.SecretManagerService
                          * @typedef DeleteSecretCallback
                          * @type {function}
@@ -3962,7 +3962,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService#listSecretVersions}.
+                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService|listSecretVersions}.
                          * @memberof google.cloud.secretmanager.v1.SecretManagerService
                          * @typedef ListSecretVersionsCallback
                          * @type {function}
@@ -3995,7 +3995,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService#getSecretVersion}.
+                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService|getSecretVersion}.
                          * @memberof google.cloud.secretmanager.v1.SecretManagerService
                          * @typedef GetSecretVersionCallback
                          * @type {function}
@@ -4028,7 +4028,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService#accessSecretVersion}.
+                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService|accessSecretVersion}.
                          * @memberof google.cloud.secretmanager.v1.SecretManagerService
                          * @typedef AccessSecretVersionCallback
                          * @type {function}
@@ -4061,7 +4061,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService#disableSecretVersion}.
+                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService|disableSecretVersion}.
                          * @memberof google.cloud.secretmanager.v1.SecretManagerService
                          * @typedef DisableSecretVersionCallback
                          * @type {function}
@@ -4094,7 +4094,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService#enableSecretVersion}.
+                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService|enableSecretVersion}.
                          * @memberof google.cloud.secretmanager.v1.SecretManagerService
                          * @typedef EnableSecretVersionCallback
                          * @type {function}
@@ -4127,7 +4127,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService#destroySecretVersion}.
+                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService|destroySecretVersion}.
                          * @memberof google.cloud.secretmanager.v1.SecretManagerService
                          * @typedef DestroySecretVersionCallback
                          * @type {function}
@@ -4160,7 +4160,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService#setIamPolicy}.
+                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService|setIamPolicy}.
                          * @memberof google.cloud.secretmanager.v1.SecretManagerService
                          * @typedef SetIamPolicyCallback
                          * @type {function}
@@ -4193,7 +4193,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService#getIamPolicy}.
+                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService|getIamPolicy}.
                          * @memberof google.cloud.secretmanager.v1.SecretManagerService
                          * @typedef GetIamPolicyCallback
                          * @type {function}
@@ -4226,7 +4226,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService#testIamPermissions}.
+                         * Callback as used by {@link google.cloud.secretmanager.v1.SecretManagerService|testIamPermissions}.
                          * @memberof google.cloud.secretmanager.v1.SecretManagerService
                          * @typedef TestIamPermissionsCallback
                          * @type {function}
@@ -9223,7 +9223,7 @@
                         };
     
                         /**
-                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService#listSecrets}.
+                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService|listSecrets}.
                          * @memberof google.cloud.secrets.v1beta1.SecretManagerService
                          * @typedef ListSecretsCallback
                          * @type {function}
@@ -9256,7 +9256,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService#createSecret}.
+                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService|createSecret}.
                          * @memberof google.cloud.secrets.v1beta1.SecretManagerService
                          * @typedef CreateSecretCallback
                          * @type {function}
@@ -9289,7 +9289,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService#addSecretVersion}.
+                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService|addSecretVersion}.
                          * @memberof google.cloud.secrets.v1beta1.SecretManagerService
                          * @typedef AddSecretVersionCallback
                          * @type {function}
@@ -9322,7 +9322,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService#getSecret}.
+                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService|getSecret}.
                          * @memberof google.cloud.secrets.v1beta1.SecretManagerService
                          * @typedef GetSecretCallback
                          * @type {function}
@@ -9355,7 +9355,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService#updateSecret}.
+                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService|updateSecret}.
                          * @memberof google.cloud.secrets.v1beta1.SecretManagerService
                          * @typedef UpdateSecretCallback
                          * @type {function}
@@ -9388,7 +9388,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService#deleteSecret}.
+                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService|deleteSecret}.
                          * @memberof google.cloud.secrets.v1beta1.SecretManagerService
                          * @typedef DeleteSecretCallback
                          * @type {function}
@@ -9421,7 +9421,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService#listSecretVersions}.
+                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService|listSecretVersions}.
                          * @memberof google.cloud.secrets.v1beta1.SecretManagerService
                          * @typedef ListSecretVersionsCallback
                          * @type {function}
@@ -9454,7 +9454,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService#getSecretVersion}.
+                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService|getSecretVersion}.
                          * @memberof google.cloud.secrets.v1beta1.SecretManagerService
                          * @typedef GetSecretVersionCallback
                          * @type {function}
@@ -9487,7 +9487,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService#accessSecretVersion}.
+                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService|accessSecretVersion}.
                          * @memberof google.cloud.secrets.v1beta1.SecretManagerService
                          * @typedef AccessSecretVersionCallback
                          * @type {function}
@@ -9520,7 +9520,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService#disableSecretVersion}.
+                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService|disableSecretVersion}.
                          * @memberof google.cloud.secrets.v1beta1.SecretManagerService
                          * @typedef DisableSecretVersionCallback
                          * @type {function}
@@ -9553,7 +9553,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService#enableSecretVersion}.
+                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService|enableSecretVersion}.
                          * @memberof google.cloud.secrets.v1beta1.SecretManagerService
                          * @typedef EnableSecretVersionCallback
                          * @type {function}
@@ -9586,7 +9586,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService#destroySecretVersion}.
+                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService|destroySecretVersion}.
                          * @memberof google.cloud.secrets.v1beta1.SecretManagerService
                          * @typedef DestroySecretVersionCallback
                          * @type {function}
@@ -9619,7 +9619,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService#setIamPolicy}.
+                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService|setIamPolicy}.
                          * @memberof google.cloud.secrets.v1beta1.SecretManagerService
                          * @typedef SetIamPolicyCallback
                          * @type {function}
@@ -9652,7 +9652,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService#getIamPolicy}.
+                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService|getIamPolicy}.
                          * @memberof google.cloud.secrets.v1beta1.SecretManagerService
                          * @typedef GetIamPolicyCallback
                          * @type {function}
@@ -9685,7 +9685,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService#testIamPermissions}.
+                         * Callback as used by {@link google.cloud.secrets.v1beta1.SecretManagerService|testIamPermissions}.
                          * @memberof google.cloud.secrets.v1beta1.SecretManagerService
                          * @typedef TestIamPermissionsCallback
                          * @type {function}
@@ -19700,6 +19700,7 @@
                  * @property {boolean|null} [packed] FieldOptions packed
                  * @property {google.protobuf.FieldOptions.JSType|null} [jstype] FieldOptions jstype
                  * @property {boolean|null} [lazy] FieldOptions lazy
+                 * @property {boolean|null} [unverifiedLazy] FieldOptions unverifiedLazy
                  * @property {boolean|null} [deprecated] FieldOptions deprecated
                  * @property {boolean|null} [weak] FieldOptions weak
                  * @property {Array.<google.protobuf.IUninterpretedOption>|null} [uninterpretedOption] FieldOptions uninterpretedOption
@@ -19755,6 +19756,14 @@
                  * @instance
                  */
                 FieldOptions.prototype.lazy = false;
+    
+                /**
+                 * FieldOptions unverifiedLazy.
+                 * @member {boolean} unverifiedLazy
+                 * @memberof google.protobuf.FieldOptions
+                 * @instance
+                 */
+                FieldOptions.prototype.unverifiedLazy = false;
     
                 /**
                  * FieldOptions deprecated.
@@ -19832,6 +19841,8 @@
                         writer.uint32(/* id 6, wireType 0 =*/48).int32(message.jstype);
                     if (message.weak != null && Object.hasOwnProperty.call(message, "weak"))
                         writer.uint32(/* id 10, wireType 0 =*/80).bool(message.weak);
+                    if (message.unverifiedLazy != null && Object.hasOwnProperty.call(message, "unverifiedLazy"))
+                        writer.uint32(/* id 15, wireType 0 =*/120).bool(message.unverifiedLazy);
                     if (message.uninterpretedOption != null && message.uninterpretedOption.length)
                         for (var i = 0; i < message.uninterpretedOption.length; ++i)
                             $root.google.protobuf.UninterpretedOption.encode(message.uninterpretedOption[i], writer.uint32(/* id 999, wireType 2 =*/7994).fork()).ldelim();
@@ -19888,6 +19899,9 @@
                             break;
                         case 5:
                             message.lazy = reader.bool();
+                            break;
+                        case 15:
+                            message.unverifiedLazy = reader.bool();
                             break;
                         case 3:
                             message.deprecated = reader.bool();
@@ -19972,6 +19986,9 @@
                     if (message.lazy != null && message.hasOwnProperty("lazy"))
                         if (typeof message.lazy !== "boolean")
                             return "lazy: boolean expected";
+                    if (message.unverifiedLazy != null && message.hasOwnProperty("unverifiedLazy"))
+                        if (typeof message.unverifiedLazy !== "boolean")
+                            return "unverifiedLazy: boolean expected";
                     if (message.deprecated != null && message.hasOwnProperty("deprecated"))
                         if (typeof message.deprecated !== "boolean")
                             return "deprecated: boolean expected";
@@ -20057,6 +20074,8 @@
                     }
                     if (object.lazy != null)
                         message.lazy = Boolean(object.lazy);
+                    if (object.unverifiedLazy != null)
+                        message.unverifiedLazy = Boolean(object.unverifiedLazy);
                     if (object.deprecated != null)
                         message.deprecated = Boolean(object.deprecated);
                     if (object.weak != null)
@@ -20144,6 +20163,7 @@
                         object.lazy = false;
                         object.jstype = options.enums === String ? "JS_NORMAL" : 0;
                         object.weak = false;
+                        object.unverifiedLazy = false;
                         object[".google.api.resourceReference"] = null;
                     }
                     if (message.ctype != null && message.hasOwnProperty("ctype"))
@@ -20158,6 +20178,8 @@
                         object.jstype = options.enums === String ? $root.google.protobuf.FieldOptions.JSType[message.jstype] : message.jstype;
                     if (message.weak != null && message.hasOwnProperty("weak"))
                         object.weak = message.weak;
+                    if (message.unverifiedLazy != null && message.hasOwnProperty("unverifiedLazy"))
+                        object.unverifiedLazy = message.unverifiedLazy;
                     if (message.uninterpretedOption && message.uninterpretedOption.length) {
                         object.uninterpretedOption = [];
                         for (var j = 0; j < message.uninterpretedOption.length; ++j)
@@ -23616,166 +23638,6 @@
                 return Timestamp;
             })();
     
-            protobuf.Empty = (function() {
-    
-                /**
-                 * Properties of an Empty.
-                 * @memberof google.protobuf
-                 * @interface IEmpty
-                 */
-    
-                /**
-                 * Constructs a new Empty.
-                 * @memberof google.protobuf
-                 * @classdesc Represents an Empty.
-                 * @implements IEmpty
-                 * @constructor
-                 * @param {google.protobuf.IEmpty=} [properties] Properties to set
-                 */
-                function Empty(properties) {
-                    if (properties)
-                        for (var keys = Object.keys(properties), i = 0; i < keys.length; ++i)
-                            if (properties[keys[i]] != null)
-                                this[keys[i]] = properties[keys[i]];
-                }
-    
-                /**
-                 * Creates a new Empty instance using the specified properties.
-                 * @function create
-                 * @memberof google.protobuf.Empty
-                 * @static
-                 * @param {google.protobuf.IEmpty=} [properties] Properties to set
-                 * @returns {google.protobuf.Empty} Empty instance
-                 */
-                Empty.create = function create(properties) {
-                    return new Empty(properties);
-                };
-    
-                /**
-                 * Encodes the specified Empty message. Does not implicitly {@link google.protobuf.Empty.verify|verify} messages.
-                 * @function encode
-                 * @memberof google.protobuf.Empty
-                 * @static
-                 * @param {google.protobuf.IEmpty} message Empty message or plain object to encode
-                 * @param {$protobuf.Writer} [writer] Writer to encode to
-                 * @returns {$protobuf.Writer} Writer
-                 */
-                Empty.encode = function encode(message, writer) {
-                    if (!writer)
-                        writer = $Writer.create();
-                    return writer;
-                };
-    
-                /**
-                 * Encodes the specified Empty message, length delimited. Does not implicitly {@link google.protobuf.Empty.verify|verify} messages.
-                 * @function encodeDelimited
-                 * @memberof google.protobuf.Empty
-                 * @static
-                 * @param {google.protobuf.IEmpty} message Empty message or plain object to encode
-                 * @param {$protobuf.Writer} [writer] Writer to encode to
-                 * @returns {$protobuf.Writer} Writer
-                 */
-                Empty.encodeDelimited = function encodeDelimited(message, writer) {
-                    return this.encode(message, writer).ldelim();
-                };
-    
-                /**
-                 * Decodes an Empty message from the specified reader or buffer.
-                 * @function decode
-                 * @memberof google.protobuf.Empty
-                 * @static
-                 * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                 * @param {number} [length] Message length if known beforehand
-                 * @returns {google.protobuf.Empty} Empty
-                 * @throws {Error} If the payload is not a reader or valid buffer
-                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
-                 */
-                Empty.decode = function decode(reader, length) {
-                    if (!(reader instanceof $Reader))
-                        reader = $Reader.create(reader);
-                    var end = length === undefined ? reader.len : reader.pos + length, message = new $root.google.protobuf.Empty();
-                    while (reader.pos < end) {
-                        var tag = reader.uint32();
-                        switch (tag >>> 3) {
-                        default:
-                            reader.skipType(tag & 7);
-                            break;
-                        }
-                    }
-                    return message;
-                };
-    
-                /**
-                 * Decodes an Empty message from the specified reader or buffer, length delimited.
-                 * @function decodeDelimited
-                 * @memberof google.protobuf.Empty
-                 * @static
-                 * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                 * @returns {google.protobuf.Empty} Empty
-                 * @throws {Error} If the payload is not a reader or valid buffer
-                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
-                 */
-                Empty.decodeDelimited = function decodeDelimited(reader) {
-                    if (!(reader instanceof $Reader))
-                        reader = new $Reader(reader);
-                    return this.decode(reader, reader.uint32());
-                };
-    
-                /**
-                 * Verifies an Empty message.
-                 * @function verify
-                 * @memberof google.protobuf.Empty
-                 * @static
-                 * @param {Object.<string,*>} message Plain object to verify
-                 * @returns {string|null} `null` if valid, otherwise the reason why it is not
-                 */
-                Empty.verify = function verify(message) {
-                    if (typeof message !== "object" || message === null)
-                        return "object expected";
-                    return null;
-                };
-    
-                /**
-                 * Creates an Empty message from a plain object. Also converts values to their respective internal types.
-                 * @function fromObject
-                 * @memberof google.protobuf.Empty
-                 * @static
-                 * @param {Object.<string,*>} object Plain object
-                 * @returns {google.protobuf.Empty} Empty
-                 */
-                Empty.fromObject = function fromObject(object) {
-                    if (object instanceof $root.google.protobuf.Empty)
-                        return object;
-                    return new $root.google.protobuf.Empty();
-                };
-    
-                /**
-                 * Creates a plain object from an Empty message. Also converts values to other types if specified.
-                 * @function toObject
-                 * @memberof google.protobuf.Empty
-                 * @static
-                 * @param {google.protobuf.Empty} message Empty
-                 * @param {$protobuf.IConversionOptions} [options] Conversion options
-                 * @returns {Object.<string,*>} Plain object
-                 */
-                Empty.toObject = function toObject() {
-                    return {};
-                };
-    
-                /**
-                 * Converts this Empty to JSON.
-                 * @function toJSON
-                 * @memberof google.protobuf.Empty
-                 * @instance
-                 * @returns {Object.<string,*>} JSON object
-                 */
-                Empty.prototype.toJSON = function toJSON() {
-                    return this.constructor.toObject(this, $protobuf.util.toJSONOptions);
-                };
-    
-                return Empty;
-            })();
-    
             protobuf.FieldMask = (function() {
     
                 /**
@@ -23979,6 +23841,166 @@
                 return FieldMask;
             })();
     
+            protobuf.Empty = (function() {
+    
+                /**
+                 * Properties of an Empty.
+                 * @memberof google.protobuf
+                 * @interface IEmpty
+                 */
+    
+                /**
+                 * Constructs a new Empty.
+                 * @memberof google.protobuf
+                 * @classdesc Represents an Empty.
+                 * @implements IEmpty
+                 * @constructor
+                 * @param {google.protobuf.IEmpty=} [properties] Properties to set
+                 */
+                function Empty(properties) {
+                    if (properties)
+                        for (var keys = Object.keys(properties), i = 0; i < keys.length; ++i)
+                            if (properties[keys[i]] != null)
+                                this[keys[i]] = properties[keys[i]];
+                }
+    
+                /**
+                 * Creates a new Empty instance using the specified properties.
+                 * @function create
+                 * @memberof google.protobuf.Empty
+                 * @static
+                 * @param {google.protobuf.IEmpty=} [properties] Properties to set
+                 * @returns {google.protobuf.Empty} Empty instance
+                 */
+                Empty.create = function create(properties) {
+                    return new Empty(properties);
+                };
+    
+                /**
+                 * Encodes the specified Empty message. Does not implicitly {@link google.protobuf.Empty.verify|verify} messages.
+                 * @function encode
+                 * @memberof google.protobuf.Empty
+                 * @static
+                 * @param {google.protobuf.IEmpty} message Empty message or plain object to encode
+                 * @param {$protobuf.Writer} [writer] Writer to encode to
+                 * @returns {$protobuf.Writer} Writer
+                 */
+                Empty.encode = function encode(message, writer) {
+                    if (!writer)
+                        writer = $Writer.create();
+                    return writer;
+                };
+    
+                /**
+                 * Encodes the specified Empty message, length delimited. Does not implicitly {@link google.protobuf.Empty.verify|verify} messages.
+                 * @function encodeDelimited
+                 * @memberof google.protobuf.Empty
+                 * @static
+                 * @param {google.protobuf.IEmpty} message Empty message or plain object to encode
+                 * @param {$protobuf.Writer} [writer] Writer to encode to
+                 * @returns {$protobuf.Writer} Writer
+                 */
+                Empty.encodeDelimited = function encodeDelimited(message, writer) {
+                    return this.encode(message, writer).ldelim();
+                };
+    
+                /**
+                 * Decodes an Empty message from the specified reader or buffer.
+                 * @function decode
+                 * @memberof google.protobuf.Empty
+                 * @static
+                 * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
+                 * @param {number} [length] Message length if known beforehand
+                 * @returns {google.protobuf.Empty} Empty
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                Empty.decode = function decode(reader, length) {
+                    if (!(reader instanceof $Reader))
+                        reader = $Reader.create(reader);
+                    var end = length === undefined ? reader.len : reader.pos + length, message = new $root.google.protobuf.Empty();
+                    while (reader.pos < end) {
+                        var tag = reader.uint32();
+                        switch (tag >>> 3) {
+                        default:
+                            reader.skipType(tag & 7);
+                            break;
+                        }
+                    }
+                    return message;
+                };
+    
+                /**
+                 * Decodes an Empty message from the specified reader or buffer, length delimited.
+                 * @function decodeDelimited
+                 * @memberof google.protobuf.Empty
+                 * @static
+                 * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
+                 * @returns {google.protobuf.Empty} Empty
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                Empty.decodeDelimited = function decodeDelimited(reader) {
+                    if (!(reader instanceof $Reader))
+                        reader = new $Reader(reader);
+                    return this.decode(reader, reader.uint32());
+                };
+    
+                /**
+                 * Verifies an Empty message.
+                 * @function verify
+                 * @memberof google.protobuf.Empty
+                 * @static
+                 * @param {Object.<string,*>} message Plain object to verify
+                 * @returns {string|null} `null` if valid, otherwise the reason why it is not
+                 */
+                Empty.verify = function verify(message) {
+                    if (typeof message !== "object" || message === null)
+                        return "object expected";
+                    return null;
+                };
+    
+                /**
+                 * Creates an Empty message from a plain object. Also converts values to their respective internal types.
+                 * @function fromObject
+                 * @memberof google.protobuf.Empty
+                 * @static
+                 * @param {Object.<string,*>} object Plain object
+                 * @returns {google.protobuf.Empty} Empty
+                 */
+                Empty.fromObject = function fromObject(object) {
+                    if (object instanceof $root.google.protobuf.Empty)
+                        return object;
+                    return new $root.google.protobuf.Empty();
+                };
+    
+                /**
+                 * Creates a plain object from an Empty message. Also converts values to other types if specified.
+                 * @function toObject
+                 * @memberof google.protobuf.Empty
+                 * @static
+                 * @param {google.protobuf.Empty} message Empty
+                 * @param {$protobuf.IConversionOptions} [options] Conversion options
+                 * @returns {Object.<string,*>} Plain object
+                 */
+                Empty.toObject = function toObject() {
+                    return {};
+                };
+    
+                /**
+                 * Converts this Empty to JSON.
+                 * @function toJSON
+                 * @memberof google.protobuf.Empty
+                 * @instance
+                 * @returns {Object.<string,*>} JSON object
+                 */
+                Empty.prototype.toJSON = function toJSON() {
+                    return this.constructor.toObject(this, $protobuf.util.toJSONOptions);
+                };
+    
+                return Empty;
+            })();
+    
             return protobuf;
         })();
     
@@ -24033,7 +24055,7 @@
                     };
     
                     /**
-                     * Callback as used by {@link google.iam.v1.IAMPolicy#setIamPolicy}.
+                     * Callback as used by {@link google.iam.v1.IAMPolicy|setIamPolicy}.
                      * @memberof google.iam.v1.IAMPolicy
                      * @typedef SetIamPolicyCallback
                      * @type {function}
@@ -24066,7 +24088,7 @@
                      */
     
                     /**
-                     * Callback as used by {@link google.iam.v1.IAMPolicy#getIamPolicy}.
+                     * Callback as used by {@link google.iam.v1.IAMPolicy|getIamPolicy}.
                      * @memberof google.iam.v1.IAMPolicy
                      * @typedef GetIamPolicyCallback
                      * @type {function}
@@ -24099,7 +24121,7 @@
                      */
     
                     /**
-                     * Callback as used by {@link google.iam.v1.IAMPolicy#testIamPermissions}.
+                     * Callback as used by {@link google.iam.v1.IAMPolicy|testIamPermissions}.
                      * @memberof google.iam.v1.IAMPolicy
                      * @typedef TestIamPermissionsCallback
                      * @type {function}
@@ -24142,6 +24164,7 @@
                      * @interface ISetIamPolicyRequest
                      * @property {string|null} [resource] SetIamPolicyRequest resource
                      * @property {google.iam.v1.IPolicy|null} [policy] SetIamPolicyRequest policy
+                     * @property {google.protobuf.IFieldMask|null} [updateMask] SetIamPolicyRequest updateMask
                      */
     
                     /**
@@ -24176,6 +24199,14 @@
                     SetIamPolicyRequest.prototype.policy = null;
     
                     /**
+                     * SetIamPolicyRequest updateMask.
+                     * @member {google.protobuf.IFieldMask|null|undefined} updateMask
+                     * @memberof google.iam.v1.SetIamPolicyRequest
+                     * @instance
+                     */
+                    SetIamPolicyRequest.prototype.updateMask = null;
+    
+                    /**
                      * Creates a new SetIamPolicyRequest instance using the specified properties.
                      * @function create
                      * @memberof google.iam.v1.SetIamPolicyRequest
@@ -24203,6 +24234,8 @@
                             writer.uint32(/* id 1, wireType 2 =*/10).string(message.resource);
                         if (message.policy != null && Object.hasOwnProperty.call(message, "policy"))
                             $root.google.iam.v1.Policy.encode(message.policy, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                        if (message.updateMask != null && Object.hasOwnProperty.call(message, "updateMask"))
+                            $root.google.protobuf.FieldMask.encode(message.updateMask, writer.uint32(/* id 3, wireType 2 =*/26).fork()).ldelim();
                         return writer;
                     };
     
@@ -24242,6 +24275,9 @@
                                 break;
                             case 2:
                                 message.policy = $root.google.iam.v1.Policy.decode(reader, reader.uint32());
+                                break;
+                            case 3:
+                                message.updateMask = $root.google.protobuf.FieldMask.decode(reader, reader.uint32());
                                 break;
                             default:
                                 reader.skipType(tag & 7);
@@ -24286,6 +24322,11 @@
                             if (error)
                                 return "policy." + error;
                         }
+                        if (message.updateMask != null && message.hasOwnProperty("updateMask")) {
+                            var error = $root.google.protobuf.FieldMask.verify(message.updateMask);
+                            if (error)
+                                return "updateMask." + error;
+                        }
                         return null;
                     };
     
@@ -24308,6 +24349,11 @@
                                 throw TypeError(".google.iam.v1.SetIamPolicyRequest.policy: object expected");
                             message.policy = $root.google.iam.v1.Policy.fromObject(object.policy);
                         }
+                        if (object.updateMask != null) {
+                            if (typeof object.updateMask !== "object")
+                                throw TypeError(".google.iam.v1.SetIamPolicyRequest.updateMask: object expected");
+                            message.updateMask = $root.google.protobuf.FieldMask.fromObject(object.updateMask);
+                        }
                         return message;
                     };
     
@@ -24327,11 +24373,14 @@
                         if (options.defaults) {
                             object.resource = "";
                             object.policy = null;
+                            object.updateMask = null;
                         }
                         if (message.resource != null && message.hasOwnProperty("resource"))
                             object.resource = message.resource;
                         if (message.policy != null && message.hasOwnProperty("policy"))
                             object.policy = $root.google.iam.v1.Policy.toObject(message.policy, options);
+                        if (message.updateMask != null && message.hasOwnProperty("updateMask"))
+                            object.updateMask = $root.google.protobuf.FieldMask.toObject(message.updateMask, options);
                         return object;
                     };
     
@@ -25188,6 +25237,7 @@
                      * @interface IPolicy
                      * @property {number|null} [version] Policy version
                      * @property {Array.<google.iam.v1.IBinding>|null} [bindings] Policy bindings
+                     * @property {Array.<google.iam.v1.IAuditConfig>|null} [auditConfigs] Policy auditConfigs
                      * @property {Uint8Array|null} [etag] Policy etag
                      */
     
@@ -25201,6 +25251,7 @@
                      */
                     function Policy(properties) {
                         this.bindings = [];
+                        this.auditConfigs = [];
                         if (properties)
                             for (var keys = Object.keys(properties), i = 0; i < keys.length; ++i)
                                 if (properties[keys[i]] != null)
@@ -25222,6 +25273,14 @@
                      * @instance
                      */
                     Policy.prototype.bindings = $util.emptyArray;
+    
+                    /**
+                     * Policy auditConfigs.
+                     * @member {Array.<google.iam.v1.IAuditConfig>} auditConfigs
+                     * @memberof google.iam.v1.Policy
+                     * @instance
+                     */
+                    Policy.prototype.auditConfigs = $util.emptyArray;
     
                     /**
                      * Policy etag.
@@ -25262,6 +25321,9 @@
                         if (message.bindings != null && message.bindings.length)
                             for (var i = 0; i < message.bindings.length; ++i)
                                 $root.google.iam.v1.Binding.encode(message.bindings[i], writer.uint32(/* id 4, wireType 2 =*/34).fork()).ldelim();
+                        if (message.auditConfigs != null && message.auditConfigs.length)
+                            for (var i = 0; i < message.auditConfigs.length; ++i)
+                                $root.google.iam.v1.AuditConfig.encode(message.auditConfigs[i], writer.uint32(/* id 6, wireType 2 =*/50).fork()).ldelim();
                         return writer;
                     };
     
@@ -25303,6 +25365,11 @@
                                 if (!(message.bindings && message.bindings.length))
                                     message.bindings = [];
                                 message.bindings.push($root.google.iam.v1.Binding.decode(reader, reader.uint32()));
+                                break;
+                            case 6:
+                                if (!(message.auditConfigs && message.auditConfigs.length))
+                                    message.auditConfigs = [];
+                                message.auditConfigs.push($root.google.iam.v1.AuditConfig.decode(reader, reader.uint32()));
                                 break;
                             case 3:
                                 message.etag = reader.bytes();
@@ -25354,6 +25421,15 @@
                                     return "bindings." + error;
                             }
                         }
+                        if (message.auditConfigs != null && message.hasOwnProperty("auditConfigs")) {
+                            if (!Array.isArray(message.auditConfigs))
+                                return "auditConfigs: array expected";
+                            for (var i = 0; i < message.auditConfigs.length; ++i) {
+                                var error = $root.google.iam.v1.AuditConfig.verify(message.auditConfigs[i]);
+                                if (error)
+                                    return "auditConfigs." + error;
+                            }
+                        }
                         if (message.etag != null && message.hasOwnProperty("etag"))
                             if (!(message.etag && typeof message.etag.length === "number" || $util.isString(message.etag)))
                                 return "etag: buffer expected";
@@ -25384,6 +25460,16 @@
                                 message.bindings[i] = $root.google.iam.v1.Binding.fromObject(object.bindings[i]);
                             }
                         }
+                        if (object.auditConfigs) {
+                            if (!Array.isArray(object.auditConfigs))
+                                throw TypeError(".google.iam.v1.Policy.auditConfigs: array expected");
+                            message.auditConfigs = [];
+                            for (var i = 0; i < object.auditConfigs.length; ++i) {
+                                if (typeof object.auditConfigs[i] !== "object")
+                                    throw TypeError(".google.iam.v1.Policy.auditConfigs: object expected");
+                                message.auditConfigs[i] = $root.google.iam.v1.AuditConfig.fromObject(object.auditConfigs[i]);
+                            }
+                        }
                         if (object.etag != null)
                             if (typeof object.etag === "string")
                                 $util.base64.decode(object.etag, message.etag = $util.newBuffer($util.base64.length(object.etag)), 0);
@@ -25405,8 +25491,10 @@
                         if (!options)
                             options = {};
                         var object = {};
-                        if (options.arrays || options.defaults)
+                        if (options.arrays || options.defaults) {
                             object.bindings = [];
+                            object.auditConfigs = [];
+                        }
                         if (options.defaults) {
                             object.version = 0;
                             if (options.bytes === String)
@@ -25425,6 +25513,11 @@
                             object.bindings = [];
                             for (var j = 0; j < message.bindings.length; ++j)
                                 object.bindings[j] = $root.google.iam.v1.Binding.toObject(message.bindings[j], options);
+                        }
+                        if (message.auditConfigs && message.auditConfigs.length) {
+                            object.auditConfigs = [];
+                            for (var j = 0; j < message.auditConfigs.length; ++j)
+                                object.auditConfigs[j] = $root.google.iam.v1.AuditConfig.toObject(message.auditConfigs[j], options);
                         }
                         return object;
                     };
@@ -25695,6 +25788,504 @@
                     };
     
                     return Binding;
+                })();
+    
+                v1.AuditConfig = (function() {
+    
+                    /**
+                     * Properties of an AuditConfig.
+                     * @memberof google.iam.v1
+                     * @interface IAuditConfig
+                     * @property {string|null} [service] AuditConfig service
+                     * @property {Array.<google.iam.v1.IAuditLogConfig>|null} [auditLogConfigs] AuditConfig auditLogConfigs
+                     */
+    
+                    /**
+                     * Constructs a new AuditConfig.
+                     * @memberof google.iam.v1
+                     * @classdesc Represents an AuditConfig.
+                     * @implements IAuditConfig
+                     * @constructor
+                     * @param {google.iam.v1.IAuditConfig=} [properties] Properties to set
+                     */
+                    function AuditConfig(properties) {
+                        this.auditLogConfigs = [];
+                        if (properties)
+                            for (var keys = Object.keys(properties), i = 0; i < keys.length; ++i)
+                                if (properties[keys[i]] != null)
+                                    this[keys[i]] = properties[keys[i]];
+                    }
+    
+                    /**
+                     * AuditConfig service.
+                     * @member {string} service
+                     * @memberof google.iam.v1.AuditConfig
+                     * @instance
+                     */
+                    AuditConfig.prototype.service = "";
+    
+                    /**
+                     * AuditConfig auditLogConfigs.
+                     * @member {Array.<google.iam.v1.IAuditLogConfig>} auditLogConfigs
+                     * @memberof google.iam.v1.AuditConfig
+                     * @instance
+                     */
+                    AuditConfig.prototype.auditLogConfigs = $util.emptyArray;
+    
+                    /**
+                     * Creates a new AuditConfig instance using the specified properties.
+                     * @function create
+                     * @memberof google.iam.v1.AuditConfig
+                     * @static
+                     * @param {google.iam.v1.IAuditConfig=} [properties] Properties to set
+                     * @returns {google.iam.v1.AuditConfig} AuditConfig instance
+                     */
+                    AuditConfig.create = function create(properties) {
+                        return new AuditConfig(properties);
+                    };
+    
+                    /**
+                     * Encodes the specified AuditConfig message. Does not implicitly {@link google.iam.v1.AuditConfig.verify|verify} messages.
+                     * @function encode
+                     * @memberof google.iam.v1.AuditConfig
+                     * @static
+                     * @param {google.iam.v1.IAuditConfig} message AuditConfig message or plain object to encode
+                     * @param {$protobuf.Writer} [writer] Writer to encode to
+                     * @returns {$protobuf.Writer} Writer
+                     */
+                    AuditConfig.encode = function encode(message, writer) {
+                        if (!writer)
+                            writer = $Writer.create();
+                        if (message.service != null && Object.hasOwnProperty.call(message, "service"))
+                            writer.uint32(/* id 1, wireType 2 =*/10).string(message.service);
+                        if (message.auditLogConfigs != null && message.auditLogConfigs.length)
+                            for (var i = 0; i < message.auditLogConfigs.length; ++i)
+                                $root.google.iam.v1.AuditLogConfig.encode(message.auditLogConfigs[i], writer.uint32(/* id 3, wireType 2 =*/26).fork()).ldelim();
+                        return writer;
+                    };
+    
+                    /**
+                     * Encodes the specified AuditConfig message, length delimited. Does not implicitly {@link google.iam.v1.AuditConfig.verify|verify} messages.
+                     * @function encodeDelimited
+                     * @memberof google.iam.v1.AuditConfig
+                     * @static
+                     * @param {google.iam.v1.IAuditConfig} message AuditConfig message or plain object to encode
+                     * @param {$protobuf.Writer} [writer] Writer to encode to
+                     * @returns {$protobuf.Writer} Writer
+                     */
+                    AuditConfig.encodeDelimited = function encodeDelimited(message, writer) {
+                        return this.encode(message, writer).ldelim();
+                    };
+    
+                    /**
+                     * Decodes an AuditConfig message from the specified reader or buffer.
+                     * @function decode
+                     * @memberof google.iam.v1.AuditConfig
+                     * @static
+                     * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
+                     * @param {number} [length] Message length if known beforehand
+                     * @returns {google.iam.v1.AuditConfig} AuditConfig
+                     * @throws {Error} If the payload is not a reader or valid buffer
+                     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                     */
+                    AuditConfig.decode = function decode(reader, length) {
+                        if (!(reader instanceof $Reader))
+                            reader = $Reader.create(reader);
+                        var end = length === undefined ? reader.len : reader.pos + length, message = new $root.google.iam.v1.AuditConfig();
+                        while (reader.pos < end) {
+                            var tag = reader.uint32();
+                            switch (tag >>> 3) {
+                            case 1:
+                                message.service = reader.string();
+                                break;
+                            case 3:
+                                if (!(message.auditLogConfigs && message.auditLogConfigs.length))
+                                    message.auditLogConfigs = [];
+                                message.auditLogConfigs.push($root.google.iam.v1.AuditLogConfig.decode(reader, reader.uint32()));
+                                break;
+                            default:
+                                reader.skipType(tag & 7);
+                                break;
+                            }
+                        }
+                        return message;
+                    };
+    
+                    /**
+                     * Decodes an AuditConfig message from the specified reader or buffer, length delimited.
+                     * @function decodeDelimited
+                     * @memberof google.iam.v1.AuditConfig
+                     * @static
+                     * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
+                     * @returns {google.iam.v1.AuditConfig} AuditConfig
+                     * @throws {Error} If the payload is not a reader or valid buffer
+                     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                     */
+                    AuditConfig.decodeDelimited = function decodeDelimited(reader) {
+                        if (!(reader instanceof $Reader))
+                            reader = new $Reader(reader);
+                        return this.decode(reader, reader.uint32());
+                    };
+    
+                    /**
+                     * Verifies an AuditConfig message.
+                     * @function verify
+                     * @memberof google.iam.v1.AuditConfig
+                     * @static
+                     * @param {Object.<string,*>} message Plain object to verify
+                     * @returns {string|null} `null` if valid, otherwise the reason why it is not
+                     */
+                    AuditConfig.verify = function verify(message) {
+                        if (typeof message !== "object" || message === null)
+                            return "object expected";
+                        if (message.service != null && message.hasOwnProperty("service"))
+                            if (!$util.isString(message.service))
+                                return "service: string expected";
+                        if (message.auditLogConfigs != null && message.hasOwnProperty("auditLogConfigs")) {
+                            if (!Array.isArray(message.auditLogConfigs))
+                                return "auditLogConfigs: array expected";
+                            for (var i = 0; i < message.auditLogConfigs.length; ++i) {
+                                var error = $root.google.iam.v1.AuditLogConfig.verify(message.auditLogConfigs[i]);
+                                if (error)
+                                    return "auditLogConfigs." + error;
+                            }
+                        }
+                        return null;
+                    };
+    
+                    /**
+                     * Creates an AuditConfig message from a plain object. Also converts values to their respective internal types.
+                     * @function fromObject
+                     * @memberof google.iam.v1.AuditConfig
+                     * @static
+                     * @param {Object.<string,*>} object Plain object
+                     * @returns {google.iam.v1.AuditConfig} AuditConfig
+                     */
+                    AuditConfig.fromObject = function fromObject(object) {
+                        if (object instanceof $root.google.iam.v1.AuditConfig)
+                            return object;
+                        var message = new $root.google.iam.v1.AuditConfig();
+                        if (object.service != null)
+                            message.service = String(object.service);
+                        if (object.auditLogConfigs) {
+                            if (!Array.isArray(object.auditLogConfigs))
+                                throw TypeError(".google.iam.v1.AuditConfig.auditLogConfigs: array expected");
+                            message.auditLogConfigs = [];
+                            for (var i = 0; i < object.auditLogConfigs.length; ++i) {
+                                if (typeof object.auditLogConfigs[i] !== "object")
+                                    throw TypeError(".google.iam.v1.AuditConfig.auditLogConfigs: object expected");
+                                message.auditLogConfigs[i] = $root.google.iam.v1.AuditLogConfig.fromObject(object.auditLogConfigs[i]);
+                            }
+                        }
+                        return message;
+                    };
+    
+                    /**
+                     * Creates a plain object from an AuditConfig message. Also converts values to other types if specified.
+                     * @function toObject
+                     * @memberof google.iam.v1.AuditConfig
+                     * @static
+                     * @param {google.iam.v1.AuditConfig} message AuditConfig
+                     * @param {$protobuf.IConversionOptions} [options] Conversion options
+                     * @returns {Object.<string,*>} Plain object
+                     */
+                    AuditConfig.toObject = function toObject(message, options) {
+                        if (!options)
+                            options = {};
+                        var object = {};
+                        if (options.arrays || options.defaults)
+                            object.auditLogConfigs = [];
+                        if (options.defaults)
+                            object.service = "";
+                        if (message.service != null && message.hasOwnProperty("service"))
+                            object.service = message.service;
+                        if (message.auditLogConfigs && message.auditLogConfigs.length) {
+                            object.auditLogConfigs = [];
+                            for (var j = 0; j < message.auditLogConfigs.length; ++j)
+                                object.auditLogConfigs[j] = $root.google.iam.v1.AuditLogConfig.toObject(message.auditLogConfigs[j], options);
+                        }
+                        return object;
+                    };
+    
+                    /**
+                     * Converts this AuditConfig to JSON.
+                     * @function toJSON
+                     * @memberof google.iam.v1.AuditConfig
+                     * @instance
+                     * @returns {Object.<string,*>} JSON object
+                     */
+                    AuditConfig.prototype.toJSON = function toJSON() {
+                        return this.constructor.toObject(this, $protobuf.util.toJSONOptions);
+                    };
+    
+                    return AuditConfig;
+                })();
+    
+                v1.AuditLogConfig = (function() {
+    
+                    /**
+                     * Properties of an AuditLogConfig.
+                     * @memberof google.iam.v1
+                     * @interface IAuditLogConfig
+                     * @property {google.iam.v1.AuditLogConfig.LogType|null} [logType] AuditLogConfig logType
+                     * @property {Array.<string>|null} [exemptedMembers] AuditLogConfig exemptedMembers
+                     */
+    
+                    /**
+                     * Constructs a new AuditLogConfig.
+                     * @memberof google.iam.v1
+                     * @classdesc Represents an AuditLogConfig.
+                     * @implements IAuditLogConfig
+                     * @constructor
+                     * @param {google.iam.v1.IAuditLogConfig=} [properties] Properties to set
+                     */
+                    function AuditLogConfig(properties) {
+                        this.exemptedMembers = [];
+                        if (properties)
+                            for (var keys = Object.keys(properties), i = 0; i < keys.length; ++i)
+                                if (properties[keys[i]] != null)
+                                    this[keys[i]] = properties[keys[i]];
+                    }
+    
+                    /**
+                     * AuditLogConfig logType.
+                     * @member {google.iam.v1.AuditLogConfig.LogType} logType
+                     * @memberof google.iam.v1.AuditLogConfig
+                     * @instance
+                     */
+                    AuditLogConfig.prototype.logType = 0;
+    
+                    /**
+                     * AuditLogConfig exemptedMembers.
+                     * @member {Array.<string>} exemptedMembers
+                     * @memberof google.iam.v1.AuditLogConfig
+                     * @instance
+                     */
+                    AuditLogConfig.prototype.exemptedMembers = $util.emptyArray;
+    
+                    /**
+                     * Creates a new AuditLogConfig instance using the specified properties.
+                     * @function create
+                     * @memberof google.iam.v1.AuditLogConfig
+                     * @static
+                     * @param {google.iam.v1.IAuditLogConfig=} [properties] Properties to set
+                     * @returns {google.iam.v1.AuditLogConfig} AuditLogConfig instance
+                     */
+                    AuditLogConfig.create = function create(properties) {
+                        return new AuditLogConfig(properties);
+                    };
+    
+                    /**
+                     * Encodes the specified AuditLogConfig message. Does not implicitly {@link google.iam.v1.AuditLogConfig.verify|verify} messages.
+                     * @function encode
+                     * @memberof google.iam.v1.AuditLogConfig
+                     * @static
+                     * @param {google.iam.v1.IAuditLogConfig} message AuditLogConfig message or plain object to encode
+                     * @param {$protobuf.Writer} [writer] Writer to encode to
+                     * @returns {$protobuf.Writer} Writer
+                     */
+                    AuditLogConfig.encode = function encode(message, writer) {
+                        if (!writer)
+                            writer = $Writer.create();
+                        if (message.logType != null && Object.hasOwnProperty.call(message, "logType"))
+                            writer.uint32(/* id 1, wireType 0 =*/8).int32(message.logType);
+                        if (message.exemptedMembers != null && message.exemptedMembers.length)
+                            for (var i = 0; i < message.exemptedMembers.length; ++i)
+                                writer.uint32(/* id 2, wireType 2 =*/18).string(message.exemptedMembers[i]);
+                        return writer;
+                    };
+    
+                    /**
+                     * Encodes the specified AuditLogConfig message, length delimited. Does not implicitly {@link google.iam.v1.AuditLogConfig.verify|verify} messages.
+                     * @function encodeDelimited
+                     * @memberof google.iam.v1.AuditLogConfig
+                     * @static
+                     * @param {google.iam.v1.IAuditLogConfig} message AuditLogConfig message or plain object to encode
+                     * @param {$protobuf.Writer} [writer] Writer to encode to
+                     * @returns {$protobuf.Writer} Writer
+                     */
+                    AuditLogConfig.encodeDelimited = function encodeDelimited(message, writer) {
+                        return this.encode(message, writer).ldelim();
+                    };
+    
+                    /**
+                     * Decodes an AuditLogConfig message from the specified reader or buffer.
+                     * @function decode
+                     * @memberof google.iam.v1.AuditLogConfig
+                     * @static
+                     * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
+                     * @param {number} [length] Message length if known beforehand
+                     * @returns {google.iam.v1.AuditLogConfig} AuditLogConfig
+                     * @throws {Error} If the payload is not a reader or valid buffer
+                     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                     */
+                    AuditLogConfig.decode = function decode(reader, length) {
+                        if (!(reader instanceof $Reader))
+                            reader = $Reader.create(reader);
+                        var end = length === undefined ? reader.len : reader.pos + length, message = new $root.google.iam.v1.AuditLogConfig();
+                        while (reader.pos < end) {
+                            var tag = reader.uint32();
+                            switch (tag >>> 3) {
+                            case 1:
+                                message.logType = reader.int32();
+                                break;
+                            case 2:
+                                if (!(message.exemptedMembers && message.exemptedMembers.length))
+                                    message.exemptedMembers = [];
+                                message.exemptedMembers.push(reader.string());
+                                break;
+                            default:
+                                reader.skipType(tag & 7);
+                                break;
+                            }
+                        }
+                        return message;
+                    };
+    
+                    /**
+                     * Decodes an AuditLogConfig message from the specified reader or buffer, length delimited.
+                     * @function decodeDelimited
+                     * @memberof google.iam.v1.AuditLogConfig
+                     * @static
+                     * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
+                     * @returns {google.iam.v1.AuditLogConfig} AuditLogConfig
+                     * @throws {Error} If the payload is not a reader or valid buffer
+                     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                     */
+                    AuditLogConfig.decodeDelimited = function decodeDelimited(reader) {
+                        if (!(reader instanceof $Reader))
+                            reader = new $Reader(reader);
+                        return this.decode(reader, reader.uint32());
+                    };
+    
+                    /**
+                     * Verifies an AuditLogConfig message.
+                     * @function verify
+                     * @memberof google.iam.v1.AuditLogConfig
+                     * @static
+                     * @param {Object.<string,*>} message Plain object to verify
+                     * @returns {string|null} `null` if valid, otherwise the reason why it is not
+                     */
+                    AuditLogConfig.verify = function verify(message) {
+                        if (typeof message !== "object" || message === null)
+                            return "object expected";
+                        if (message.logType != null && message.hasOwnProperty("logType"))
+                            switch (message.logType) {
+                            default:
+                                return "logType: enum value expected";
+                            case 0:
+                            case 1:
+                            case 2:
+                            case 3:
+                                break;
+                            }
+                        if (message.exemptedMembers != null && message.hasOwnProperty("exemptedMembers")) {
+                            if (!Array.isArray(message.exemptedMembers))
+                                return "exemptedMembers: array expected";
+                            for (var i = 0; i < message.exemptedMembers.length; ++i)
+                                if (!$util.isString(message.exemptedMembers[i]))
+                                    return "exemptedMembers: string[] expected";
+                        }
+                        return null;
+                    };
+    
+                    /**
+                     * Creates an AuditLogConfig message from a plain object. Also converts values to their respective internal types.
+                     * @function fromObject
+                     * @memberof google.iam.v1.AuditLogConfig
+                     * @static
+                     * @param {Object.<string,*>} object Plain object
+                     * @returns {google.iam.v1.AuditLogConfig} AuditLogConfig
+                     */
+                    AuditLogConfig.fromObject = function fromObject(object) {
+                        if (object instanceof $root.google.iam.v1.AuditLogConfig)
+                            return object;
+                        var message = new $root.google.iam.v1.AuditLogConfig();
+                        switch (object.logType) {
+                        case "LOG_TYPE_UNSPECIFIED":
+                        case 0:
+                            message.logType = 0;
+                            break;
+                        case "ADMIN_READ":
+                        case 1:
+                            message.logType = 1;
+                            break;
+                        case "DATA_WRITE":
+                        case 2:
+                            message.logType = 2;
+                            break;
+                        case "DATA_READ":
+                        case 3:
+                            message.logType = 3;
+                            break;
+                        }
+                        if (object.exemptedMembers) {
+                            if (!Array.isArray(object.exemptedMembers))
+                                throw TypeError(".google.iam.v1.AuditLogConfig.exemptedMembers: array expected");
+                            message.exemptedMembers = [];
+                            for (var i = 0; i < object.exemptedMembers.length; ++i)
+                                message.exemptedMembers[i] = String(object.exemptedMembers[i]);
+                        }
+                        return message;
+                    };
+    
+                    /**
+                     * Creates a plain object from an AuditLogConfig message. Also converts values to other types if specified.
+                     * @function toObject
+                     * @memberof google.iam.v1.AuditLogConfig
+                     * @static
+                     * @param {google.iam.v1.AuditLogConfig} message AuditLogConfig
+                     * @param {$protobuf.IConversionOptions} [options] Conversion options
+                     * @returns {Object.<string,*>} Plain object
+                     */
+                    AuditLogConfig.toObject = function toObject(message, options) {
+                        if (!options)
+                            options = {};
+                        var object = {};
+                        if (options.arrays || options.defaults)
+                            object.exemptedMembers = [];
+                        if (options.defaults)
+                            object.logType = options.enums === String ? "LOG_TYPE_UNSPECIFIED" : 0;
+                        if (message.logType != null && message.hasOwnProperty("logType"))
+                            object.logType = options.enums === String ? $root.google.iam.v1.AuditLogConfig.LogType[message.logType] : message.logType;
+                        if (message.exemptedMembers && message.exemptedMembers.length) {
+                            object.exemptedMembers = [];
+                            for (var j = 0; j < message.exemptedMembers.length; ++j)
+                                object.exemptedMembers[j] = message.exemptedMembers[j];
+                        }
+                        return object;
+                    };
+    
+                    /**
+                     * Converts this AuditLogConfig to JSON.
+                     * @function toJSON
+                     * @memberof google.iam.v1.AuditLogConfig
+                     * @instance
+                     * @returns {Object.<string,*>} JSON object
+                     */
+                    AuditLogConfig.prototype.toJSON = function toJSON() {
+                        return this.constructor.toObject(this, $protobuf.util.toJSONOptions);
+                    };
+    
+                    /**
+                     * LogType enum.
+                     * @name google.iam.v1.AuditLogConfig.LogType
+                     * @enum {number}
+                     * @property {number} LOG_TYPE_UNSPECIFIED=0 LOG_TYPE_UNSPECIFIED value
+                     * @property {number} ADMIN_READ=1 ADMIN_READ value
+                     * @property {number} DATA_WRITE=2 DATA_WRITE value
+                     * @property {number} DATA_READ=3 DATA_READ value
+                     */
+                    AuditLogConfig.LogType = (function() {
+                        var valuesById = {}, values = Object.create(valuesById);
+                        values[valuesById[0] = "LOG_TYPE_UNSPECIFIED"] = 0;
+                        values[valuesById[1] = "ADMIN_READ"] = 1;
+                        values[valuesById[2] = "DATA_WRITE"] = 2;
+                        values[valuesById[3] = "DATA_READ"] = 3;
+                        return values;
+                    })();
+    
+                    return AuditLogConfig;
                 })();
     
                 v1.PolicyDelta = (function() {
