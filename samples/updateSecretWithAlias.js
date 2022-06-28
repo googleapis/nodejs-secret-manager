@@ -36,7 +36,7 @@ async function main(name = 'projects/my-project/secrets/my-secret') {
         },
       },
       updateMask: {
-        paths: ['versionaliases'],
+        paths: ['version_aliases'],
       },
     });
 
