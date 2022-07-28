@@ -14,7 +14,11 @@
 
 'use strict';
 
-async function main(parent = 'projects/my-project', secretId = 'my-secret', ...locations) {
+async function main(
+  parent = 'projects/my-project',
+  secretId = 'my-secret',
+  ...locations
+) {
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
@@ -35,7 +39,9 @@ async function main(parent = 'projects/my-project', secretId = 'my-secret', ...l
       secret: {
         replication: {
           userManaged: {
-            replicas: locations.map(x => { return { location: x } } )
+            replicas: locations.map(x => {
+              return {location: x};
+            }),
           },
         },
       },
