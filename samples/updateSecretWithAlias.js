@@ -32,7 +32,7 @@ async function main(name = 'projects/my-project/secrets/my-secret') {
       secret: {
         name: name,
         versionAliases: {
-          test: '1',
+          test: 1,
         },
       },
       updateMask: {
