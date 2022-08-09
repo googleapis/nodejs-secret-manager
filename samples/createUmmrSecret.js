@@ -24,7 +24,7 @@ async function main(
    */
   // const parent = 'projects/my-project';
   // const secretId = 'my-secret';
-  // const locations = ['us-east1', 'us-east4', 'us-west1']
+  // const locations = ['us-east1', 'us-east4', 'us-west1'];
 
   // Imports the Secret Manager library
   const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
